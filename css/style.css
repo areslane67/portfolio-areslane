@@ -78,15 +78,36 @@ section p{
     color: white;
 }
 section ul{
-    display: flex;
-    justify-content: space-around;
+    display: grid;  
+    grid-template-columns: repeat(auto-fill, minmax(15rem,1fr));
+    gap: 4rem;
 }
 section ul li img{
-    max-width: 15rem;
+    width: 100%;
+    height: 100%;
 }
-
-/* footer*/
+/* footer */
 
 footer p{
     text-align: center;
+    padding: 2rem;
+    color: white;
+} 
+footer{
+    background-color:rgba(32, 34, 37, 1);
+    display: flex;
+    flex-direction: column;
+}
+footer img{
+    margin: 0rem 1rem ;
+}
+/* responsive */
+
+@media screen and (max-width: 50rem){
+    .aside{
+        font-size: 4.0rem;
+    }
+    header{
+        font-size: 1.5rem;
+    }
 }
