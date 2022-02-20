@@ -46,18 +46,35 @@ header h1{
 
 /* boddy */
 
+.aside{
+    background: url(https://www.wallpapertip.com/wmimgs/49-494534_home-about-abstract-nature-urban-corporates-business-professional.jpg)no-repeat scroll center center / cover;
+    min-height: 50vh;
+    max-width: 135rem;
+    margin: 2rem auto 2rem;
+    box-shadow: 0 0 1.0rem #333 ;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    border-radius: 5rem;
+    font-size: 10.0rem;
+    color: grey;
+    text-shadow: .8rem .8rem 0 #333333, 1.1rem 1.1rem 0 black;
+
+}
 
 h2{
     background-color: rgba(88, 101, 242, 1);
-    border-radius: 2rem;
+    border-radius: 1rem;
+    padding: .5rem ; 
 }
 section{
     background-color: rgba(32, 34, 37, 1);
-    border-radius: 2rem;
+    border-radius: 1rem;
     max-width: 90rem;
     margin: 3rem auto;
 }
 section p{
+    padding: 2rem;
     color: white;
 }
 section ul{
