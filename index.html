@@ -8,47 +8,55 @@
     <link rel="icon" href="./assets/blue_user_client_person_12581(1).png">
     <title>Portfolio</title>
 </head>
+<body>
 <header>
 <img src="./assets/icon-5404125_960_720.png" alt="">
 <h1>Portfolio Areslane</h1>
 </header>
-<body>
 <main>
-    <div class="aside" id="aside" role="complementary" arria-labelledby="title">
-        <h3>présentation</h3>
-      </div>
-    <div class="header">
-      <a href="">Expérience</a>
-      <a href="">Compétences</a>
-      <a href="">Formation</a>
-      <a href="#loisirs">Loisirs</a>
-      <a href="#footer">Contact</a>
+    <nav class="header">
+        <ul>
+            <li><a href="#expérience">Expérience</a></li>
+            <li><a href="#compétences">Compétences</a></li>
+            <li><a href="#formation">Formation</a></li>
+            <li><a href="#loisirs">Loisirs</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="aside" role="complementary">
+        <h3>Présentation</h3>
     </div>
-    <section>
-    <h2 class="titre1">Compétences</h2>
-    <p>Conception et développement Site Analyser, concevoir, évaluer. <br> web.Rédaction de cahier de charge et <br><br> écran de spécification, arborescence fonctionnelle. <br>
-       Formateur en applications multimédia on-line et off-lineCoordinateur pédagogique. <br>
-       Conception Réalisation et conduiteHTML5, CSS3, javaScript et DOM et PHP
-    </p>
+    <section id="expérience">
+    <h2 class="titre1">expériences</h2>
+    <p> 2020 : Stage de BTS de 6 semaines au sein de la societe parisbusiness&leisure</p>
     </section>
-    <section>
+    <section class="img" id="compétences">
         <h2 class="titre1">Logiciels & Editeurs Web</h2>
 <ul>
         <li><img src="./assets/css_original_wordmark_logo_icon_146576.png" alt="CSS3"></li>
         <li><img src="./assets/html_original_wordmark_logo_icon_146478.png" alt="Photoshop"></li>
-        <li><img src="./assets/javascript_original_logo_icon_146455 (1).png" alt="JS6"></li>
-        <li><img src="./assets/java_original_wordmark_logo_icon_146459.png" alt="HTML5"></li>
+        <li><img src="./assets/JavaScript_logo.png" alt="JS6"></li>
+        <li><img src="./assets/java.png" alt="HTML5"></li>
         <li><img src="./assets/file_type_git_icon_130581.png" alt=""></li>
         <li><img src="./assets/file_type_php_icon_130266.png" alt=""></li>
         <li><img src="./assets/mysql_original_wordmark_logo_icon_146417.png" alt=""></li>
 </ul>
     </section>
-    <section>
-        <h2 class="titre1">Expériences professionelle ou stage</h2>
-        <p> 2013 : Concepteur Réalisateur du site E-Cognosys entreprise technologique basée en Inde.Développement Front-end : html5 Ecrans de spécification et story-board Zoning, validation W3C <br>
-            2012 : Chef de projet technique sur la refonte du site Nattypeople Préparation du cahier de chargeEcrans de spécification Zoning, validation W3</p>
+    <section id="formation">
+        <h2 class="titre1">formation et stage</h2>
+        <p> 2016 : Brevet des collèges Collège Decartes </p>
+        <p> 2020 : baccalauréat Lycée Athene royal d'Ixelles - Belgique </p>
+        <p>2020 - 2022 : BTS Services Informatiques aux Organisations option SLAM - ITIC Paris 20 </p>
     </section>
-    <section id="loisirs">
+    <section class="travaux">
+        <h2 class="titre1">traveaux</h2>
+    <ul>
+        <li><h3>Travaux WEB Ecole</h3><a href="./traveaux.html"><img src="./assets/web_development_coding_code_browse_browser_icon-icons.com_59980.png" alt=""></a></li>
+        <li><h3>Travaux PPE JAVA - BTS</h3><a href="./traveaux1.html"><img src="./assets/3709742-board-forum-information-text-web_108094.png" alt=""></a></li>
+        <li><h3>Travaux PPE WEB - BTS</h3><a href="./traveaux2.html"><img src="./assets/3709742-board-forum-information-text-web_108094.png" alt=""></a></li>
+    </ul>    
+    </section>
+    <section class="img" id="loisirs">
         <h2 class="titre1">Loisirs</h2>
     <ul>
         <li><img src="./assets/unnamed.png" alt=""></li>
@@ -59,22 +67,26 @@
     </section>
 </main>
 <footer>
-    <footer id="footer">
-        <section>
+    <div class="footer">
+        <section class="reseau"> 
+            <h3>Follow Me</h3>
+        <div>
             <a href="https://www.instagram.com/_areslane_/"><img src="./assets/Instagram_icon-icons.com_66804(1).png" alt=""></a>
             <a href="https://github.com/areslane67"><img src="./assets/github_logo_icon_188438.png" alt=""></a>
             <a href="https://www.linkedin.com/in/areslane-haddadi-9260131a1/"><img src="./assets/linkedin_icon-icons.com_65929.png" alt=""></a>
+        </div>
         </section>
         <section class="plus">
+            <h3>Contact</h3>
             <div>
                 <img src="./assets/gmail_new_logo_icon_159149.png" alt=""><a href="mailto:areslane67@gmail.com">areslane67@gmail.com</a>
             </div>
             <div>
-                <img src="./assets/telephone_phone_16772.png" alt=""><a href="tel:06 67 08 15 22">06 67 08 15 22</a>
+                <img src="./assets/telephone_phone_16772.png" alt=""><a href="tel:0667081522">06 67 08 15 22</a>
             </div>
         </section>
-            <p>&copy; Areslane - 2021 -</p>
-    </footer>
+    </div>
+            <p id="footer">&copy; Areslane - 2021 -</p>
 </footer>
 </body>
 </html>
