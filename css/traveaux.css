@@ -32,20 +32,26 @@ button{
 
 
 header{
-    background-color: rgba(32, 34, 37, 1);
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
     align-items: center;
-    justify-content: center;
+    background-color: rgba(32, 34, 37, .4);       
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 header img{
-    max-width: 8rem;
+    max-width: 5rem;
 }
 header h1{
-    margin-left: 1rem;
     color: white;
+    text-align: center;
 }
 /* Main */
-
+main{
+    margin-top: 10rem;
+}
 main section{
     max-width: 120rem;
     border-radius: 2rem;

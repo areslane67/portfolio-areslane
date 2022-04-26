@@ -31,9 +31,10 @@ button{
 
 
 header{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
     align-items: center;
-    justify-content: center;
     background-color: rgba(32, 34, 37, .4);       
     position: fixed;
     width: 100%;
@@ -43,48 +44,98 @@ header img{
     max-width: 8rem;
 }
 header h1{
-    margin-left: 1rem;
     color: white;
+    text-align: center;
 }
 
 /* boddy */
 
 /* NAV */
-nav.header a{
+
+/* BURGER */
+
+.burger{
+    cursor: pointer;
+    z-index: 5;
     text-align: center;
-    color: black;
+    color: white;
+    font-size: 5rem;
+    border-radius: 5rem;
+    width: 7rem;
+}
+header nav{
+    display: none;
+}
+.open-menu{
+    position: fixed;
+    display: block;
+    height: 30.3rem;
+    width: 20rem;
+    z-index: 2;
+    border-radius: 1rem;
+    top: 8rem;
+    right: 16rem;
+    transition: all .3s ease-in-out;
+    visibility: visible;
+    background-color: rgba(32, 34, 37, .8);       
+}
+.open-menu nav{
+    position: static;
+    display: block;
+}
+.open-menu nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.open-menu ul li{
+    width: 90%;
+    height: 4rem;
+    border-radius: 1rem;
+    display: flex;
+    margin: .5rem auto;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(88, 101, 242, 1);
-    border-radius: 2rem;
-    width: 14rem;
-    padding: .5rem; 
+    transition: 1s;
+} 
+.open-menu ul li:hover{
+    transform: scale(1.08);
+    transition: .3s all ease-in-out;
 }
-nav.header a:hover{
-    transform: scale(1.1);
-    transition: 1s all ease-in-out;
+.open-menu ul li a{
+    width: 90%;
+    color: black;
 }
-nav.header ul{
-    margin: 10rem 0rem 0rem 0rem;
-    display: flex;
-    justify-content: space-around;
-}
-nav.header ul li{
-    display: flex;
-}
+
 /* IMG GRAND */
 
 .aside{
-    background: url(https://www.wallpapertip.com/wmimgs/49-494534_home-about-abstract-nature-urban-corporates-business-professional.jpg) no-repeat scroll center center / cover;
-    min-height: 50vh;
-    max-width: 135rem;
-    margin: 2rem auto 2rem;
-    box-shadow: 0 0 1.0rem #333 ;
-    display: grid;
+    background: url(../assets/pixel-jeff-clipa-s.gif) no-repeat scroll center center / cover;
+    min-height: 100vh;
+    max-width: 100%;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    border-radius: 5rem;
-    font-size: 10.0rem;
-    color: grey;
-    text-shadow: .8rem .8rem 0 #333333, 1.1rem 1.1rem 0 black;
+    font-size: 3.5rem;
+    color: white;
+}
+main::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10rem;
+    background: linear-gradient(to top,#36393f,transparent);
+}
+.aside div.H{
+    font-weight: 500;
+    background: rgba(54, 57, 63, .4);
+    width: 100%;
+    padding: 4rem 0rem;
 }
 
 /* MAIN */
@@ -195,18 +246,20 @@ footer img:hover{
 
 @media screen and (max-width: 50rem){
     .aside{
-        font-size: 4.0rem;
+        font-size: 2.5rem;
+        background: url(../assets/pixel-jeff-night-street-b.gif) no-repeat scroll center center / cover;
+        min-height: 80vh;
     }
     header{
         font-size: 1.5rem;
     }
-    nav.header ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    nav.header ul li{
-        margin: .5rem 0rem;
+    
+    .open-menu{
+        top: 9.5rem;
+        right: 0rem; 
+        width: 100%;
+        border-radius: 0;
+        background-color: rgba(32, 34, 37, .4);       
     }
     .footer{
         display: flex;
