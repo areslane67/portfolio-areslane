@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" href="./assets/blue_user_client_person_12581(1).png">
     <title>Portfolio</title>
 </head>
@@ -33,6 +34,19 @@
             <h4>Développeur Front-End</h4>
         </div>
     </div>
+    <section id="info" class="curriculum">
+        <h2>a propos de moi</h2>
+        <ul class="grid-picture-large"> 
+            <li 
+            data-title="curriculum vitae"
+            data-image="./assets/CV.png">
+                <h3>curriculum vitae</h3>
+                    <figure>
+                        <img src="./assets/cv_102350.png" alt="image">
+                    </figure>
+            </li>
+        </ul>
+    </section>
     <section id="Expérience">
     <h2>expériences</h2>
     <p> 2020 : Stage de BTS de 6 semaines au sein de la societe parisbusiness&leisure</p>
@@ -72,6 +86,19 @@
         <li><img src="./assets/118-1185366_vector-illustration-of-commercial-airplane-passenger-logo-avion.png" alt=""></li>
     </ul>    
     </section>
+    <!-- modale -->
+<div class="parent-modale" role="dialog">
+    <figure class="modale">
+        <button aria-label="closed">
+            <span class="material-icons">clear</span>
+        </button>
+        <a href="./assets/Areslane Haddadi CV - Universitaire.pdf" target="bank"><img src="https://via.placeholder.com/500" alt="picture"></a>
+        <figcaption class="desc">
+            <h3>title</h3>
+        </figcaption>
+    </figure>
+</div>
+
 </main>
 <footer>
     <div class="footer">
@@ -96,5 +123,6 @@
             <p id="footer">&copy; Areslane - 2021 -</p>
 </footer>
 <script src="./js/app.js"></script>
+<script src="./js/modal.js"></script>
 </body>
 </html>

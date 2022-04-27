@@ -131,7 +131,7 @@ main div.aside::after{
     width: 100%;
     height: 10rem;
     z-index: 0.1;
-    background: linear-gradient(to top,#2058c8,transparent);
+    background: linear-gradient(to top,#36393f,transparent);
 }
 .aside div.H{
     font-weight: 500;
@@ -174,6 +174,36 @@ main section.img ul li{
     border-radius: 1rem;
     margin: 1rem;
     padding: 1rem;
+}
+/* curriculum vitae */
+
+main section.curriculum ul li img{
+    width: 15rem;
+    margin: 1rem 0rem;
+    transition: 1s;
+}
+main section.curriculum ul li{
+    background: rgba(54, 57, 63, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+main section.curriculum ul li h3{
+    color: white;
+    margin: 1rem auto;
+}
+main section.curriculum ul{
+    display: grid;  
+    width: 40rem;
+    grid-template-columns: repeat(auto-fill, minmax(100%,1fr));
+    margin: 0 auto;
+    cursor: pointer;
+}
+main section.curriculum ul:hover img{
+    transform: scale(1.3);
+    transition: 1s;
 }
 
 /* MAIN IMG Traveaux */
@@ -267,6 +297,9 @@ footer img:hover{
         height: 
         100%;
     }
+    .parent-modale .modale{
+        max-width: 80rem;     
+    }
     
     .open-menu nav ul{
         height: 100%;
@@ -282,4 +315,63 @@ footer img:hover{
     .reseau,.plus{
         margin-bottom: 4rem;
     }
+}
+
+/* modale */
+
+.parent-modale{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.4s ease-in-out;
+}
+.parent-modale .modale{
+    max-width: 40rem;
+    padding: 1rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 2;
+    
+}
+.modale-active{
+    z-index: 1;
+    opacity: 1;
+    transform-origin: center center;
+}
+.parent-modale .modale .desc h3{
+    font-size: x-large;
+    font-weight: 400;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+}
+.parent-modale .modale img{
+    width: 100%;
+}
+
+.parent-modale .modale button{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    z-index: 2;
+    color: white;
+    cursor: pointer;
+    background-color: black;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2rem;
+    transition: 1s;
+}
+.parent-modale .modale button:hover{
+    transform: scale(1.2);
+    transition: 1s;
 }
