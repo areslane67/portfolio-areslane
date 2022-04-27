@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" href="./assets/blue_user_client_person_12581(1).png">
     <title>Portfolio</title>
 </head>
@@ -34,25 +33,12 @@
             <h4>Développeur Front-End</h4>
         </div>
     </div>
-    <section id="info" class="curriculum">
-        <h2>a propos de moi</h2>
-        <ul class="grid-picture-large"> 
-            <li 
-            data-title="curriculum vitae"
-            data-image="./assets/CV.png">
-                <h3>curriculum vitae</h3>
-                    <figure>
-                        <img src="./assets/cv_102350.png" alt="image">
-                    </figure>
-            </li>
-        </ul>
-    </section>
     <section id="Expérience">
-    <h2>expériences</h2>
+    <h2 class="titre1">expériences</h2>
     <p> 2020 : Stage de BTS de 6 semaines au sein de la societe parisbusiness&leisure</p>
     </section>
     <section class="img" id="compétences">
-        <h2>Logiciels & Editeurs Web</h2>
+        <h2 class="titre1">Logiciels & Editeurs Web</h2>
 <ul>
         <li><img src="./assets/css_original_wordmark_logo_icon_146576.png" alt="CSS3"></li>
         <li><img src="./assets/html_original_wordmark_logo_icon_146478.png" alt="Photoshop"></li>
@@ -64,13 +50,13 @@
 </ul>
     </section>
     <section id="formation">
-        <h2>formation et stage</h2>
+        <h2 class="titre1">formation et stage</h2>
         <p> 2016 : Brevet des collèges Collège Decartes </p>
         <p> 2020 : baccalauréat Lycée Athene royal d'Ixelles - Belgique </p>
         <p>2020 - 2022 : BTS Services Informatiques aux Organisations option SLAM - ITIC Paris 20 </p>
     </section>
     <section class="travaux" id="travaux">
-        <h2>traveaux</h2>
+        <h2 class="titre1">travaux</h2>
     <ul>
         <li><h3>Travaux WEB</h3><a href="./traveaux.html"><img src="./assets/web_development_coding_code_browse_browser_icon-icons.com_59980.png" alt=""></a></li>
         <li><h3>Travaux PPE JAVA - BTS</h3><a href="./traveaux1.html"><img src="./assets/3709742-board-forum-information-text-web_108094.png" alt=""></a></li>
@@ -78,7 +64,7 @@
     </ul>    
     </section>
     <section class="img" id="loisirs">
-        <h2>Loisirs</h2>
+        <h2 class="titre1">Loisirs</h2>
     <ul>
         <li><img src="./assets/unnamed.png" alt=""></li>
         <li><img src="./assets/3081079.png" alt=""></li>
@@ -86,19 +72,6 @@
         <li><img src="./assets/118-1185366_vector-illustration-of-commercial-airplane-passenger-logo-avion.png" alt=""></li>
     </ul>    
     </section>
-    <!-- modale -->
-<div class="parent-modale" role="dialog">
-    <figure class="modale">
-        <button aria-label="closed">
-            <span class="material-icons">clear</span>
-        </button>
-        <a href="./assets/Areslane Haddadi CV - Universitaire.pdf" target="bank"><img src="https://via.placeholder.com/500" alt="picture"></a>
-        <figcaption class="desc">
-            <h3>title</h3>
-        </figcaption>
-    </figure>
-</div>
-
 </main>
 <footer>
     <div class="footer">
@@ -112,17 +85,21 @@
         </section>
         <section class="plus">
             <h3>Contact</h3>
+        <div class="flex">
             <div>
-                <img src="./assets/gmail_new_logo_icon_159149.png" alt=""><a href="mailto:areslane67@gmail.com">areslane67@gmail.com</a>
+                <img src="./assets/gmail_new_logo_icon_159149.png" alt="image"><a href="mailto:areslane67@gmail.com">areslane67@gmail.com</a>
             </div>
             <div>
-                <img src="./assets/telephone_phone_16772.png" alt=""><a href="tel:0667081522">06 67 08 15 22</a>
+                <img src="./assets/telephone_phone_16772.png" alt="image"><a href="tel:0667081522">06 67 08 15 22</a>
             </div>
+            <div class="curriculum">
+                <img src="./assets/cv_102350.png" alt="image"><a href="./assets/Areslane Haddadi CV - Universitaire.pdf" target="blank">curriculum vitae</a>
+            </div>
+        </div>
         </section>
     </div>
             <p id="footer">&copy; Areslane - 2021 -</p>
 </footer>
 <script src="./js/app.js"></script>
-<script src="./js/modal.js"></script>
 </body>
 </html>
