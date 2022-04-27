@@ -205,6 +205,99 @@ main section.travaux ul{
     gap: 4rem;
 }
 
+/* plus */
+
+.plus1{
+    cursor: pointer;
+    z-index: 5;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding: .3rem 3rem;
+    border: solid white .4rem;
+}
+.bloc{
+    display: block;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+main nav{
+    display: none;
+}
+.open-plus nav{
+    position: static;
+    display: flex;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+section#formation{
+    width: 49%;
+}
+section#formation ul{
+    display: grid;  
+    grid-template-columns: repeat(auto-fill, minmax(13rem,1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+section#formation ul li{
+    background: rgba(54, 57, 63, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20rem;
+    border-radius: 1rem;
+}
+section#formation ul li h3{
+    text-align: center;
+    color: white;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+section#formation ul li img{
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 2rem;
+}
+section#formation ul li:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+section#Expérience1{
+    width: 48%;
+}
+section#Expérience1 ul{
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section#Expérience1 ul li{
+    background: rgba(54, 57, 63, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    margin: 1rem auto;
+    border-radius: 1rem;
+}
+section#Expérience1 ul li h3{
+    text-align: center;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+section#Expérience1 ul li img{
+    filter: invert(1);
+}
+section#Expérience1 ul:hover li img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+div.close-menu h2{
+    text-align: center;
+}
 /* footer */
 
 footer p{
@@ -238,25 +331,25 @@ footer img:hover{
     transform: scale(1.2);
     transition: .3s all ease-in-out;
 }
-.plus div{
+footer .plus div{
     display: flex;
     align-items: center;
 }
-.plus div.flex{
+footer .plus div.flex{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.plus div.flex div{
+footer .plus div.flex div{
     margin-bottom: .5rem;
 }
-.plus div img{
+footer .plus div img{
     max-width: 3rem;
 }
-.plus div a{
+footer .plus div a{
     color: white;
 }
-.curriculum{
+footer .curriculum{
     text-decoration: underline;
     text-decoration-color: white;
 }
