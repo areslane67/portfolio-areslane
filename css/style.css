@@ -255,9 +255,6 @@ footer img:hover{
     header{
         font-size: 1.5rem;
     }
-    main::before{
-        margin-bottom: 18rem;
-    }
     .open-menu{ 
         width: 100%;
         min-height: 100%;
