@@ -7,9 +7,9 @@ html{
 }
 body{
     font: 1.6rem 'Montserrat', sans-serif;
-    margin: 0;
+    margin: 5rem 0 0 0;
     line-height: 1.6;
-    background: rgba(54, 57, 63, 1);
+    background: linear-gradient(to right,#421D81,#000023);
 }
 section,figure,h1,h2,h3,h4,h5,h6,ol,p,ul{
     margin:0;
@@ -27,7 +27,6 @@ button{
     border:0;
     background-color:transparent;
 }
-
 /* header */
 
 
@@ -40,6 +39,7 @@ header{
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 1;
 }
 header img{
     max-width: 5rem;
@@ -48,35 +48,125 @@ header h1{
     color: white;
     text-align: center;
 }
-/* Main */
-main{
-    margin-top: 10rem;
+
+/* boddy */
+
+/* NAV */
+
+/* BURGER */
+
+.burger{
+    cursor: pointer;
+    z-index: 5;
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    border-radius: 5rem;
+    width: 7rem;
 }
-main section{
-    max-width: 120rem;
-    border-radius: 2rem;
-    margin: 2rem auto;
+header nav{
+    display: none;
 }
-main section ul{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30rem,1fr));
-    gap: 4rem;
+.open-menu{
+    position: fixed;
+    display: block;
+    width: 20rem;
+    z-index: 2;
+    border-radius: 1rem;
+    top: 8rem;
+    right: 16rem;
+    transition: all .3s ease-in-out;
+    visibility: visible;
+    background-color: rgba(32, 34, 37, .8);       
 }
-main section ul li{
+.open-menu nav{
+    position: static;
+    display: block;
+}
+.open-menu nav ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    color: white;
-    background-color: rgba(32, 34, 37, 1);
-    padding: 2rem;
-    border-radius: 2rem;
+    text-align: center;
 }
-main section ul li img{
+.open-menu ul li{
+    width: 90%;
+    height: 4rem;
     border-radius: 1rem;
-    max-width: 30rem;
-    max-height: 15rem;
+    display: flex;
+    margin: .5rem auto;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(88, 101, 242, 1);
+    transition: 1s;
+} 
+.open-menu ul li:hover{
+    transform: scale(1.08);
+    transition: .3s all ease-in-out;
 }
+.open-menu ul li a{
+    width: 90%;
+    color: black;
+}
+/* Main */
+main section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 0rem;
+}
+main section div{
+    color: white;
+    width: 50%;
+    margin-left: 8rem;
+}
+main section div.img{
+    display: block;
+    text-align: end;
+    margin-right: 8rem;
+}
+main section div span{
+    background-color: white;
+    color: black;
+    border-radius: 5rem;
+    padding: .4rem;
+    font-weight: bolder;
+}
+main section div p{
+    margin: 1rem 4rem;
+    font-weight: bold;
+}
+main section div ul{
+    margin-left: 8rem;
+}
+main section div h2{
+    margin-top: .5rem;
+    margin-left: 1rem;
+}
+main section img{
+    width: 60rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.452);
+    transition: 1s;
+}
+main section img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+main section.revers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    background-image: linear-gradient(to left, #434343 0%, black 100%);
+}
+main section div.imgrevers{
+    display: block;
+    text-align: start;
+    margin-left: 8rem;
+}
+
 /* footer */
 
 footer p{
@@ -85,7 +175,7 @@ footer p{
     color: white;
 } 
 footer{
-    background-color:rgba(32, 34, 37, 1);
+    background-color:rgba(32, 34, 37, .7);
 }
 .footer{
     display: flex;
@@ -110,21 +200,86 @@ footer img:hover{
     transform: scale(1.2);
     transition: .3s all ease-in-out;
 }
-.plus div{
+footer .plus div{
     display: flex;
     align-items: center;
 }
-.plus div img{
+footer .plus div.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+footer .plus div.flex div{
+    margin-bottom: .5rem;
+}
+footer .plus div img{
     max-width: 3rem;
 }
-.plus div a{
+footer .plus div a{
     color: white;
+}
+footer .curriculum{
+    text-decoration: underline;
+    text-decoration-color: white;
 }
 /* responsive */
 
 @media screen and (max-width: 50rem){
     header{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+    }
+    .open-menu{ 
+        width: 100%;
+        min-height: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(32, 34, 37, .9);      
+    }
+    .open-menu nav{
+        width: 100%;
+        height: 
+        100%;
+    }
+    .open-plus nav{
+        flex-direction: column;
+    }
+    .open-menu nav ul{
+        height: 100%;
+        justify-content: center;
+    }
+    .open-menu nav ul li{
+        margin: 1rem 0rem;
+    }
+    main section{
+        flex-direction: column-reverse;
+    }
+    main section img{
+        width: 100%;
+    }
+    main section.revers{
+        flex-direction: column-reverse;
+    }
+    main section div{
+        margin: 0;
+        width: 100%;
+    }
+    main section div p{
+        margin: 2rem 0;
+    }
+    main section div ul{
+        margin: 0;
+    }
+    main section div h2{
+        margin: 2rem 0;
+    }
+    main section div.img{
+        margin: 0 0 5rem 0;
+        text-align: center;
+    }
+    main section div.imgrevers{
+        margin: 0 0 5rem 0;
+        text-align: center;
     }
     .footer{
         display: flex;

@@ -70,7 +70,6 @@ header nav{
 .open-menu{
     position: fixed;
     display: block;
-    height: 30.3rem;
     width: 20rem;
     z-index: 2;
     border-radius: 1rem;
@@ -246,7 +245,7 @@ section#formation ul li{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 20rem;
+    width: 90%;
     border-radius: 1rem;
 }
 section#formation ul li h3{
@@ -377,7 +376,18 @@ footer .curriculum{
         height: 
         100%;
     }
-    
+    .open-plus nav{
+        flex-direction: column;
+    }
+    section#formation{
+        width: 100%;
+    }
+    section#Expérience1{
+        width: 100%;
+    }
+    section#formation ul{
+        grid-template-columns: repeat(auto-fill, minmax(12rem,1fr));
+    }
     .open-menu nav ul{
         height: 100%;
         justify-content: center;

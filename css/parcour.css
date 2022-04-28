@@ -1,0 +1,279 @@
+/* reset */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap');
+
+html{
+    font-size:62.5%;
+    scroll-behavior:smooth;
+}
+body{
+    font: 1.6rem 'Montserrat', sans-serif;
+    margin: 5rem 0 0 0;
+    line-height: 1.6;
+    background: linear-gradient(to right,#421D81,#000023);
+}
+section,figure,h1,h2,h3,h4,h5,h6,ol,p,ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+*{ 
+    box-sizing:border-box;
+}
+button{
+    padding:0;
+    border:0;
+    background-color:transparent;
+}
+/* header */
+
+
+header{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(32, 34, 37, .4);       
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+header img{
+    max-width: 5rem;
+}
+header h1{
+    color: white;
+    text-align: center;
+}
+
+/* boddy */
+
+/* NAV */
+
+/* BURGER */
+
+.burger{
+    cursor: pointer;
+    z-index: 5;
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    border-radius: 5rem;
+    width: 7rem;
+}
+header nav{
+    display: none;
+}
+.open-menu{
+    position: fixed;
+    display: block;
+    width: 20rem;
+    z-index: 2;
+    border-radius: 1rem;
+    top: 8rem;
+    right: 16rem;
+    transition: all .3s ease-in-out;
+    visibility: visible;
+    background-color: rgba(32, 34, 37, .8);       
+}
+.open-menu nav{
+    position: static;
+    display: block;
+}
+.open-menu nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.open-menu ul li{
+    width: 90%;
+    height: 4rem;
+    border-radius: 1rem;
+    display: flex;
+    margin: .5rem auto;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(88, 101, 242, 1);
+    transition: 1s;
+} 
+.open-menu ul li:hover{
+    transform: scale(1.08);
+    transition: .3s all ease-in-out;
+}
+.open-menu ul li a{
+    width: 90%;
+    color: black;
+}
+
+/* Main */
+
+main section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 0rem;
+}
+main section div{
+    color: white;
+    width: 50%;
+    margin-left: 8rem;
+}
+main section div.img{
+    display: block;
+    text-align: end;
+    margin-right: 8rem;
+}
+main section div span{
+    background-color: white;
+    color: black;
+    border-radius: 5rem;
+    padding: .4rem;
+    font-weight: bolder;
+}
+main section div p{
+    margin: 1rem 4rem;
+    font-weight: bold;
+}
+main section div ul{
+    margin-left: 8rem;
+}
+main section div h2{
+    margin-top: .5rem;
+    margin-left: 1rem;
+}
+main section img{
+    width: 30rem;
+}
+
+main section.revers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    background-image: linear-gradient(to left, #434343 0%, black 100%);
+}
+main section div.imgrevers{
+    display: block;
+    text-align: start;
+    margin-left: 8rem;
+}
+
+/* footer */
+
+footer p{
+    text-align: center;
+    padding: 2rem;
+    color: white;
+} 
+footer{
+    background-color:rgba(32, 34, 37, .7);
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer .plus, footer .reseau{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer h3{
+    color: white;
+    font-size: 3rem;
+    margin: 2rem 0rem;
+}
+footer section img{
+    margin: 0rem 1rem ;
+    transition: 1s;
+}
+footer img:hover{
+    transform: scale(1.2);
+    transition: .3s all ease-in-out;
+}
+footer .plus div{
+    display: flex;
+    align-items: center;
+}
+footer .plus div.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+footer .plus div.flex div{
+    margin-bottom: .5rem;
+}
+footer .plus div img{
+    max-width: 3rem;
+}
+footer .plus div a{
+    color: white;
+}
+footer .curriculum{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+@media screen and (max-width: 50rem){
+    header{
+        font-size: 1.5rem;
+    }
+    .open-menu{ 
+        width: 100%;
+        min-height: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(32, 34, 37, .9);      
+    }
+    .open-menu nav{
+        width: 100%;
+        height: 
+        100%;
+    }
+    .open-plus nav{
+        flex-direction: column;
+    }
+    .open-menu nav ul{
+        height: 100%;
+        justify-content: center;
+    }
+    .open-menu nav ul li{
+        margin: 1rem 0rem;
+    }
+    main section{
+        flex-direction: column-reverse;
+    }
+    main section.revers{
+        flex-direction: column-reverse;
+    }
+    main section div{
+        margin: 0;
+        width: 100%;
+    }
+    main section div p{
+        margin: 2rem 0;
+    }
+    main section div ul{
+        margin: 0;
+    }
+    main section div h2{
+        margin: 2rem 0;
+    }
+    main section div.img{
+        margin: 0 0 5rem 0;
+        text-align: center;
+    }
+    main section div.imgrevers{
+        margin: 0 0 5rem 0;
+        text-align: center;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
