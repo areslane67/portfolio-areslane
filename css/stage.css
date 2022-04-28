@@ -141,6 +141,9 @@ main section div p{
 main section div ul{
     margin-left: 8rem;
 }
+main section div ul li{
+    margin-bottom: .5rem;
+}
 main section div h2{
     margin-top: .5rem;
     margin-left: 1rem;
