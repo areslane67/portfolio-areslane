@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/traveaux1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img src="./assets/ic-back_97586.png" alt="logo"></a>
+        <h1>PPE_JAVA</h1>
+        <span class="burger">☰</span>
+                    <div class="close-menu">
+                        <nav>
+                            <ul class="close">
+                                <li><a href="./index.html">Acceuil</a></li>
+                                <li><a href="#Itération1">Itération 1</a></li>
+                                <li><a href="#Itération2">Itération 2</a></li>
+                                <li><a href="#Itération3">Itération 3</a></li>
+                                <li><a href="#Itération4">Itération 4</a></li>
+                                <li><a href="#footer">ontact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+        </header>
+        <main>
+            <section>
+                <img src="" alt="">
+                <h2>Présentation</h2>
+                <p>Un des responsables de la M2L, utilise une application pour gérer les employés des ligues. L’application est mise à votre disposition par le biais des ressources suivantes :</p>
+                <p>Cette application, très simple, n’existe qu’en ligne de commande et est mono-utilisateur. Nous souhaiterions désigner un administrateur par ligue et lui confier la tâche de recenser les employés de sa ligue. Une partie du travail est déjà faite mais vous allez devoir le compléter.</p>
+                <p>Les niveaux d’habilitation des utilisateurs sont les suivants : </p>
+                <ul>
+                    <li>Un simple employé de ligue peut ouvrir l’application et s’en servir comme un annuaire, mais il ne dispose d’aucun droit d’écriture. </li>
+                    <li>Un employé par ligue est admininstrateur et dispose de droits d’écriture peut gérer la liste des emloyés de sa propre ligue avec une application bureau. </li>
+                    <li>Le super-admininstrateur a accès en écriture à tous les employés des ligues. Il peut aussi gérer les comptes des administrateurs des ligues avec une application accessible en ligne de commande. </li>
+                    <li>L’application doit être rendue multi-utilisateurs grace à l’utilisation d’une base de données. </li>
+                    <li>Les trois niveaux d’habilitation ci-dessus doivent être mis en place. </li>
+                </ul>
+            </section>
+            <section id="Itération1">
+                <h2>Itération 1</h2>
+                <ul>
+                    <li> Modélisation d’une base de données avec un MCD. </li>
+                    <li>Vérification du fonctionnement correct de l’application grâce à des tests unitaires. </li>
+                    <li>Gestion de la date de départ et de celle d’arrivée de chaque employé (couche métier + tests unitaires). </li>
+                    <li>Représentation des menus du dialogue en ligne de commande avec un arbre heuristique (Utilisez un logiciel de type Freemind). </li>
+                </ul>
+            </section>
+            <section id="Itération2">
+                <h2>Itération 2</h2>
+                <ul>
+                    <li> Création de la base de données. </li>
+                    <li>Gestion des dates dans le dialogue en ligne de commande. </li>
+                    <li>Dans le dialogue en ligne de commande, un employé doit être selectionné avant que l’on puisse choisir de modifier ou de supprimer. </li>
+                    <li>Possibilité de changer l’administrateur d’une ligue en ligne de commande. </li>
+                </ul>
+            </section>
+            <section id="Itération3">
+                <h2>Itération 3</h2>
+                <ul>
+                    <li>Création d’une classe fille de Passerelle permettant de gérer la connexion à la base de données avec JDBC (ou avec Hibernate si vous le souhaitez). </li>
+                    <li>Modélisation de l’interface graphique avec des maquettes. </li>
+                    <li>Possibilité de changer l’administrateur d’une ligue en ligne de commande. </li>
+                </ul>
+            </section>
+            <section id="Itération4">
+                <h2>Itération 4</h2>
+                <ul>
+                    <li>Création d’une interface graphique (Swing ou JavaFx) pour que les administrateurs puissent gérer les ligues. </li>
+                    <li>Si une ligue n’a pas d’administrateur, c’est automatiquement le root qui devient l’administrateur de la ligue (avec les tests unitaires correspondants). </li>
+                    <li>Installation de la base de données sur un serveur accessible dans le réseau local de la société. </li>
+                    <li>Rédaction d’un mode opératoire à l’usage des administrateurs. </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <section class="reseau"> 
+                    <h3>Follow Me</h3>
+                <div>
+                    <a href="https://www.instagram.com/_areslane_/"><img src="./assets/Instagram_icon-icons.com_66804(1).png" alt=""></a>
+                    <a href="https://github.com/areslane67"><img src="./assets/github_logo_icon_188438.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/areslane-haddadi-9260131a1/"><img src="./assets/linkedin_icon-icons.com_65929.png" alt=""></a>
+                </div>
+                </section>
+                <section class="plus">
+                    <h3>Contact</h3>
+                <div class="flex">
+                    <div>
+                        <img src="./assets/gmail_new_logo_icon_159149.png" alt="image"><a href="mailto:areslane67@gmail.com">areslane67@gmail.com</a>
+                    </div>
+                    <div>
+                        <img src="./assets/telephone_phone_16772.png" alt="image"><a href="tel:0667081522">06 67 08 15 22</a>
+                    </div>
+                    <div class="curriculum">
+                        <img src="./assets/cv_102350.png" alt="image"><a href="./assets/CV.pdf" target="blank">curriculum vitae</a>
+                    </div>
+                </div>
+                </section>
+            </div>
+                    <p id="footer">&copy; Areslane - 2021 -</p>
+        </footer>
+        <script src="./js/app.js"></script>
+</body>
+</html>
