@@ -4,7 +4,7 @@
 	<img src="./assets/Readme.png" width="900">
 </p>
 
-[Voire mon portfolio](https://areslane67.github.io/poartfolio-areslane/index.html)
+[Voire mon portfolio](https://areslane67.github.io/portfolio-areslane/index.html)
 
 ### Étudiant BTS SIO 2ème Année a ITIC Paris
 
