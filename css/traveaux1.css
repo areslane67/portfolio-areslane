@@ -121,6 +121,7 @@ main section{
     padding: 1rem 1rem;
     background-color:rgba(32, 34, 37, .7);
     border-radius: 1rem;
+    border: #0C0F0A solid 0.2rem;
 }
 main section h2{
     text-align: center;
@@ -129,9 +130,42 @@ main section h2{
 main section p{
     margin: 1rem 0rem;
 }
-
+main section img{
+    width: 50rem;
+    display: block;
+    margin: 0 auto;
+    border-radius: 1rem;
+    border: #0C0F0A solid 0.2rem;
+}
 main section ul li{
     margin: 1rem 0rem;
+}
+main section#Maquette ul{
+    display: flex;
+    justify-content: space-around;
+}
+main section#Maquette img{
+    width: 30rem;
+}
+main section#réalisation img{
+    width: 30rem;
+}
+main a{
+    background-color:rgba(32, 34, 37, .7);
+    color: white;
+    border-radius: 1rem;
+    font-size: 3rem;
+    margin: 4rem auto;
+    display: block;
+    max-width: 25rem;
+    text-align: center;
+    font-weight: bolder;
+    transition: 1s;
+    padding: 1rem;
+}
+main a:hover{
+    transform: scale(1.3);
+    transition: 1s;
 }
 
 /* footer */
@@ -220,6 +254,12 @@ footer .curriculum{
     }
     .open-menu nav ul li{
         margin: 1rem 0rem;
+    }
+    main section img{
+        width: 30rem;
+    }
+    main section#Maquette ul{
+        flex-direction: column;
     }
     .footer{
         display: flex;
