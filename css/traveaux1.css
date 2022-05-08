@@ -167,7 +167,18 @@ main a:hover{
     transform: scale(1.3);
     transition: 1s;
 }
-
+#Synthèse p{
+    background-color: #444;
+    border-radius: 1rem;
+  }
+#Synthèse p:nth-child(2n+1) {
+    background-color: #333;
+    border-radius: 1rem;
+    padding-left: 2rem;
+  }
+  #Synthèse p:nth-child(2n+2){
+    padding-left: 1rem;
+  }
 /* footer */
 
 footer p{

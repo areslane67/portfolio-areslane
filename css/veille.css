@@ -137,7 +137,7 @@ main section ul{
 main section ul li img{
     width: 20rem;
 }
-main section img#sible{
+main section img.sible{
     width: 50rem;
     display: block;
     margin: 0 auto;
@@ -247,7 +247,7 @@ footer .curriculum{
     main section ul li{
         margin: 1rem 0;
     }
-    main section img#sible{
+    main section img.sible{
         width: 30rem;
     }
     .footer{

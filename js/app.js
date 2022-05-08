@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     plus.addEventListener("click", () => {
         el1.classList.toggle("open-plus");
-        plus.innerHTML === "+ plus" ? plus.innerHTML = "- moins" : plus.innerHTML = "+ plus";
+        plus.innerHTML === "+ Plus" ? plus.innerHTML = "- Moins" : plus.innerHTML = "+ Plus";
         
     });
 });

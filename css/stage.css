@@ -111,54 +111,87 @@ header nav{
 
 /* Main */
 
-main section{
+main section#stage{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 6rem 0rem;
 }
-main section div{
+main section#stage div{
     color: white;
     width: 50%;
     margin-left: 8rem;
 }
-main section div.img{
+main section#stage div.img{
     display: block;
     text-align: end;
     margin-right: 8rem;
 }
-main section div span{
+main section#stage div span{
     background-color: white;
     color: black;
     border-radius: 5rem;
     padding: .4rem;
     font-weight: bolder;
 }
-main section div p{
+main section#stage div p{
     margin: 1rem 4rem;
     font-weight: bold;
 }
-main section div ul{
+main section#stage div ul{
     margin-left: 8rem;
 }
-main section div ul li{
+main section#stage div ul li{
     margin-bottom: .5rem;
 }
-main section div h2{
+main section#stage div h2{
     margin-top: .5rem;
     margin-left: 1rem;
 }
-main section img{
+main section#stage img{
     width: 30rem;
     border-radius: 1rem;
     transition: 1s;
     filter: invert(1);
 }
-main section img:hover{
+main section#stage img:hover{
     transform: scale(1.1);
     transition: 1s;
 }
-
+main section#Synthèse{
+    margin: 3rem auto;
+    padding: 1rem 1rem;
+    background-color:rgba(32, 34, 37, .2);
+    border-radius: 1rem;
+    border: #0C0F0A solid 0.2rem;
+    max-width: 90rem;
+    color: white;
+}
+main section#Synthèse section{
+    margin: 3rem auto;
+    padding: 1rem 1rem;
+    background-color:rgba(32, 34, 37, .2);
+    border-radius: 1rem;
+    border: #0C0F0A solid 0.2rem;
+    max-width: 90rem;
+    color: white;
+}
+#Synthèse p{
+    background-color: #444;
+    border-radius: 1rem;
+  }
+#Synthèse h2{
+    text-align: center;
+    font-size: 4rem;
+  }
+#Synthèse p:nth-child(2n+1) {
+    background-color: #333;
+    border-radius: 1rem;
+    padding-left: 2rem;
+  }
+  #Synthèse p:nth-child(2n+2){
+    padding-left: 1rem;
+  }
 /* footer */
 
 footer p{
