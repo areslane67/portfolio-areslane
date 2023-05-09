@@ -61,7 +61,7 @@ div.fx:hover{
     transition: 1s;
 }
 main div.aside a.veil{
-    color: black;
+    color: white;
     background: rgba(54, 57, 63, .7);
     padding: 1rem;
     border-radius: 5rem;
@@ -78,7 +78,7 @@ main div.aside a img{
     background: rgba(54, 57, 63, .4);
     width: 100%;
     padding: 4rem 0rem;
-    margin-bottom: 30rem;
+    margin-bottom: 10rem;
 }
 
 /* MAIN */
