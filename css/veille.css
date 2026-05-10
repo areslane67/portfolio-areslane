@@ -54,6 +54,13 @@ main section ul{
     align-items: center;
     justify-content: space-around;
 }
+ul.veille{
+    display: flex;
+    flex-direction: column;
+    list-style: disc;
+    padding-left: 2rem;
+    align-items: start;
+}
 main section ul li img{
     width: 20rem;
 }
