@@ -1,198 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/traveaux.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="icon" href="./assets/web_development_coding_code_browse_browser_icon-icons.com_59980.png">
-    <title>Travaux WEB</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TP web (2020-2024) — Areslane Haddadi</title>
+  <meta name="description" content="Les travaux pratiques web d'Areslane Haddadi : reproductions de Google, Instagram, Gmail et Amazon, slider, blog et premiers scripts JavaScript.">
+  <meta name="theme-color" content="#08081a">
+  <link rel="canonical" href="https://areslane67.github.io/portfolio-areslane/traveaux.html">
+  <link rel="alternate" hreflang="fr" href="https://areslane67.github.io/portfolio-areslane/traveaux.html">
+  <link rel="alternate" hreflang="en" href="https://areslane67.github.io/portfolio-areslane/en/school-projects.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="TP web (2020-2024) — Areslane Haddadi">
+  <meta property="og:url" content="https://areslane67.github.io/portfolio-areslane/traveaux.html">
+  <meta property="og:image" content="https://areslane67.github.io/portfolio-areslane/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/main.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-    <header>
-        <span class="burger" aria-hidden="true">☰</span>
-                    <div class="close-menu">
-                        <nav>
-                            <ul class="close">
-                                <li><a href="./index.html">Acceuil</a></li>
-                                <li><a href="#codeErroné">code erroné </a></li>
-                                <li><a href="#Slider">Slider</a></li>
-                                <li><a href="#LoginInstagram">Login Instagram</a></li>
-                                <li><a href="#Google">Google</a></li>
-                                <li><a href="#Blog">Blog</a></li>
-                                <li><a href="#Banque">Banque</a></li>
-                                <li><a href="#Formulaire">Formulaire</a></li>
-                                <li><a href="#Article">Article</a></li>
-                                <li><a href="#footer">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-    </header>
-    <main>
-        <section id="codeErroné">
-            <div>
-                <span class="date">10 Avril 2022</span>
-                    <h2>Correction d'un code erroné</h2>
-                    <p>HTML,CSS,JS</p>
-                <ul>
-                    <li>TP ayant pour objectif la visualisation d'une video qui nous montre une maniere de codée obsolète et nos missions etait :</li>
-                    <li>-Reproduir le code</li>
-                    <li>-rectifier les erreures</li>
-                    <li>-creation d'un login en Javascript</li>
-                    <li>-rendre le code responsive</li>
-                    <li>-mettre de la sémantique</li>
-                </ul>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header is-solid">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Areslane Haddadi, retour à l'accueil">
+        <span class="brand-name" aria-hidden="true">Areslane<span class="brand-dot">.</span></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Menu principal">
+        <a href="index.html#a-propos">À propos</a>
+        <a href="index.html#competences">Compétences</a>
+        <a href="index.html#projets" aria-current="page">Projets</a>
+        <a href="index.html#parcours">Parcours</a>
+        <a href="veille-technologique.html">Veille</a>
+        <a href="index.html#contact">Contact</a>
+        <a class="btn btn-primary btn-sm" href="assetWeb/CV.pdf" target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="img/icons.svg#download"/></svg> Mon CV
+        </a>
+      </nav>
+      <a class="lang-switch" href="en/school-projects.html" hreflang="en" lang="en" aria-label="English version">EN</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu">
+        <svg class="icon icon-menu" aria-hidden="true"><use href="img/icons.svg#menu"/></svg>
+        <svg class="icon icon-close" aria-hidden="true"><use href="img/icons.svg#close"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="page-hero">
+      <div class="container">
+        <a class="back-link" href="index.html#projets">
+          <svg class="icon" aria-hidden="true"><use href="img/icons.svg#arrow-left"/></svg> Retour aux projets
+        </a>
+        <p class="eyebrow">// travaux pratiques</p>
+        <h1>TP web, 2020 – 2024</h1>
+        <p class="lead">
+          Les exercices réalisés pendant mon BTS SIO et mon Bachelor à ITIC Paris&nbsp;: reproductions de sites connus,
+          premiers scripts JavaScript et premières pages en PHP. Chaque carte mène à la démo en ligne et au code.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="projects">
+          <article class="project reveal">
+            <div class="project-media"><img src="img/tp/cinema.webp" alt="Page d'accueil du site de streaming de films d'horreur" width="800" height="380" loading="lazy"></div>
+            <div class="project-body">
+              <p class="project-meta"><span>Avril 2024</span></p>
+              <h3>Site de streaming horreur</h3>
+              <p>Site vitrine d'une plateforme de films d'horreur, avec une palette de couleurs et une typographie définies en amont.</p>
+              <ul class="tags"><li class="tag">HTML</li><li class="tag">CSS</li></ul>
+              <div class="project-links">
+                <a class="link-btn" href="https://areslane67.github.io/cinema/index.html" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#external"/></svg> Démo</a>
+                <a class="link-btn" href="https://github.com/areslane67/cinema" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#github"/></svg> Code</a>
+              </div>
             </div>
-            <div class="img">
-                <a href="https://areslane67.github.io/readme-correction/index.html"><img src="./assetWeb/readme.png" alt="image"></a>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-media"><img src="img/tp/gmail.webp" alt="Page de connexion inspirée de Gmail" width="800" height="394" loading="lazy"></div>
+            <div class="project-body">
+              <p class="project-meta"><span>Mars 2023</span></p>
+              <h3>Connexion façon Gmail</h3>
+              <p>Système de connexion en PHP qui donne accès à une fausse boîte de réception Gmail.</p>
+              <ul class="tags"><li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">PHP</li></ul>
+              <div class="project-links">
+                <a class="link-btn" href="https://areslane67.github.io/gmail/index.html" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#external"/></svg> Démo</a>
+                <a class="link-btn" href="https://github.com/areslane67/gmail" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#github"/></svg> Code</a>
+              </div>
             </div>
-        </section>
-        <section class="revers" id="Slider">
-            <div>
-                <span class="date">24 Mars 2022</span>
-                    <h2>Creation d'un Slider</h2>
-                    <p>HTML,CSS,JS</p>
-                <ul>
-                    <li>TP ayant pour objectif la création d'un Slider en Javascript en utilisation des images et une CSS au choix</li>
-                </ul>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-media"><img src="img/tp/amazon.webp" alt="Page produit inspirée d'Amazon" width="800" height="395" loading="lazy"></div>
+            <div class="project-body">
+              <p class="project-meta"><span>Octobre 2022</span></p>
+              <h3>Page produit façon Amazon</h3>
+              <p>Reproduction d'une page de vente en ligne à partir des contenus fournis.</p>
+              <ul class="tags"><li class="tag">HTML</li><li class="tag">CSS</li></ul>
+              <div class="project-links">
+                <a class="link-btn" href="https://areslane67.github.io/Vente/index.html" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#external"/></svg> Démo</a>
+                <a class="link-btn" href="https://github.com/areslane67/Vente" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#github"/></svg> Code</a>
+              </div>
             </div>
-            <div class="imgrevers">
-                <a href="https://areslane67.github.io/slider/index.html"><img src="./assetWeb/Slider.png" alt="image"></a>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-media"><img src="img/tp/readme.webp" alt="Page corrigée du TP de reprise de code" width="800" height="380" loading="lazy"></div>
+            <div class="project-body">
+              <p class="project-meta"><span>Avril 2022</span></p>
+              <h3>Reprise d'un code obsolète</h3>
+              <p>Reproduction d'un code dépassé, correction des erreurs, ajout d'une connexion en JavaScript, passage en responsive et en HTML sémantique.</p>
+              <ul class="tags"><li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li></ul>
+              <div class="project-links">
+                <a class="link-btn" href="https://areslane67.github.io/readme-correction/index.html" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#external"/></svg> Démo</a>
+                <a class="link-btn" href="https://github.com/areslane67/readme-correction" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#github"/></svg> Code</a>
+              </div>
             </div>
-        </section>
-        <section id="LoginInstagram">
-            <div>
-                <span class="date">6 Janvier 2022</span>
-                    <h2>Reproduction Login Instagram</h2>
-                    <p>HTML,CSS,JS</p>
-                <ul>
-                    <li>TP ayant pour objectif la reproduction de la page de connexion d'Instagram.La connexion devant se faire Javascript et comprenant des conditions. </li>
-                </ul>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-media"><img src="img/tp/slider.webp" alt="Carrousel d'images" width="800" height="380" loading="lazy"></div>
+            <div class="project-body">
+              <p class="project-meta"><span>Mars 2022</span></p>
+              <h3>Slider d'images</h3>
+              <p>Carrousel d'images entièrement géré en JavaScript.</p>
+              <ul class="tags"><li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li></ul>
+              <div class="project-links">
+                <a class="link-btn" href="https://areslane67.github.io/slider/index.html" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#external"/></svg> Démo</a>
+                <a class="link-btn" href="https://github.com/areslane67/slider" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#github"/></svg> Code</a>
+              </div>
             </div>
-            <div class="img">
-                <a href="https://areslane67.github.io/instagram/index.html"><img src="./assetWeb/fake-insta.png" alt="image"></a>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-media"><img src="img/tp/instagram.webp" alt="Page de connexion inspirée d'Instagram" width="800" height="380" loading="lazy"></div>
+            <div class="project-body">
+              <p class="project-meta"><span>Janvier 2022</span></p>
+              <h3>Connexion façon Instagram</h3>
+              <p>Reproduction de la page de connexion d'Instagram, avec vérification des identifiants en JavaScript.</p>
+              <ul class="tags"><li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li></ul>
+              <div class="project-links">
+                <a class="link-btn" href="https://areslane67.github.io/instagram/index.html" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#external"/></svg> Démo</a>
+                <a class="link-btn" href="https://github.com/areslane67/instagram" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#github"/></svg> Code</a>
+              </div>
             </div>
-        </section>
-        <section class="revers" id="Google">
-            <div>
-                <span class="date">6 Octobre 2021</span>
-                    <h2>Reproduction Google</h2>
-                    <p>HTML,CSS</p>
-                <ul>
-                    <li>TP ayant pour objectif la reproduction de la fameuse page d'accueil de Google.L'outil de recherche devant être fonctionnel sans avoir recourt à du Javascript. </li>
-                </ul>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-media"><img src="img/tp/google.webp" alt="Page d'accueil inspirée de Google" width="800" height="380" loading="lazy"></div>
+            <div class="project-body">
+              <p class="project-meta"><span>Octobre 2021</span></p>
+              <h3>Page d'accueil façon Google</h3>
+              <p>Reproduction de la page d'accueil de Google, avec une recherche qui fonctionne sans JavaScript.</p>
+              <ul class="tags"><li class="tag">HTML</li><li class="tag">CSS</li></ul>
+              <div class="project-links">
+                <a class="link-btn" href="https://areslane67.github.io/TP-Google/index.html" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#external"/></svg> Démo</a>
+                <a class="link-btn" href="https://github.com/areslane67/TP-Google" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#github"/></svg> Code</a>
+              </div>
             </div>
-            <div class="imgrevers">
-                <a href="https://areslane67.github.io/TP-Google/index.html"><img src="./assetWeb/fake-google.png" alt="image"></a>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-media"><img src="img/tp/blog.webp" alt="Page d'accueil du blog personnel" width="800" height="380" loading="lazy"></div>
+            <div class="project-body">
+              <p class="project-meta"><span>Mai 2021</span></p>
+              <h3>Blog personnel</h3>
+              <p>Blog réalisé à partir d'un wireframe, avec un thème et un design libres.</p>
+              <ul class="tags"><li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li></ul>
+              <div class="project-links">
+                <a class="link-btn" href="https://areslane67.github.io/tp_du_11_05_2021/index.html" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#external"/></svg> Démo</a>
+                <a class="link-btn" href="https://github.com/areslane67/tp_du_11_05_2021" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#github"/></svg> Code</a>
+              </div>
             </div>
-        </section>
-        <section id="Blog">
-            <div>
-                <span class="date">11 Mai 2021</span>
-                    <h2>Blog personnel</h2>
-                    <p>HTML,CSS,JS</p>
-                <ul>
-                    <li>TP ayant pour objectif la production d'un blog d'après un wireframe tout en ayant le libre choix sur le thème et le design. </li>
-                </ul>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-media"><img src="img/tp/banque.webp" alt="Simulation de distributeur bancaire" width="800" height="380" loading="lazy"></div>
+            <div class="project-body">
+              <p class="project-meta"><span>Mars 2021</span></p>
+              <h3>Distributeur bancaire</h3>
+              <p>Simulation d'un retrait d'argent dans un distributeur, en JavaScript.</p>
+              <ul class="tags"><li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li></ul>
+              <div class="project-links">
+                <a class="link-btn" href="https://areslane67.github.io/TP_Banque/Distributeur.html" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#external"/></svg> Démo</a>
+                <a class="link-btn" href="https://github.com/areslane67/TP_Banque" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#github"/></svg> Code</a>
+              </div>
             </div>
-            <div class="img">
-                <a href="https://areslane67.github.io/tp_du_11_05_2021/index.html"><img src="./assetWeb/blog.png" alt="image"></a>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-media"><img src="img/tp/annee-naissance.webp" alt="Formulaire de calcul de l'année de naissance" width="800" height="380" loading="lazy"></div>
+            <div class="project-body">
+              <p class="project-meta"><span>Mars 2021</span></p>
+              <h3>Calcul de l'année de naissance</h3>
+              <p>Formulaire qui retrouve l'année de naissance à partir des informations saisies, en JavaScript.</p>
+              <ul class="tags"><li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li></ul>
+              <div class="project-links">
+                <a class="link-btn" href="https://areslane67.github.io/TP_Annee_De_Naissance/form_age.html" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#external"/></svg> Démo</a>
+                <a class="link-btn" href="https://github.com/areslane67/TP_Annee_De_Naissance" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#github"/></svg> Code</a>
+              </div>
             </div>
-        </section>
-        <section class="revers" id="Banque">
-            <div>
-                <span class="date">16 Mars 2021</span>
-                    <h2>Banque</h2>
-                    <p>HTML,CSS,JS</p>
-                <ul>
-                    <li>TP ayant pour objectif la creation d'une simulation d'un retrait sur une banque en ligne en Javascript</li>
-                </ul>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-media"><img src="img/tp/comics.webp" alt="Article sur DC Comics" width="800" height="395" loading="lazy"></div>
+            <div class="project-body">
+              <p class="project-meta"><span>Novembre 2020</span></p>
+              <h3>Article DC Comics</h3>
+              <p>Mise en page d'un article en HTML et CSS à partir des contenus fournis.</p>
+              <ul class="tags"><li class="tag">HTML</li><li class="tag">CSS</li></ul>
+              <div class="project-links">
+                <a class="link-btn" href="https://areslane67.github.io/TP_Batman/index.html" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#external"/></svg> Démo</a>
+                <a class="link-btn" href="https://github.com/areslane67/TP_Batman" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#github"/></svg> Code</a>
+              </div>
             </div>
-            <div class="imgrevers">
-                <a href="https://areslane67.github.io/TP_Banque/Distributeur.html"><img src="./assetWeb/Banque.png" alt="image"></a>
-            </div>
-        </section>
-        <section id="Formulaire">
-            <div>
-                <span class="date">16 Mars 2021</span>
-                    <h2>Formulaire Âge</h2>
-                    <p>HTML,CSS,JS</p>
-                <ul>
-                    <li>TP ayant pour objectif la creation d'un système pouvant te donner ton annee de naissance via les informations que tu lui a fournit en Javascript</li>
-                </ul>
-            </div>
-            <div class="img">
-                <a href="https://areslane67.github.io/TP_Annee_De_Naissance/form_age.html"><img src="./assetWeb/Anée_Naissance.png" alt="image"></a>
-            </div>
-        </section>
-        <section class="revers" id="Article">
-            <div>
-                <span class="date">10 Novembre 2020</span>
-                    <h2>Article DC-Comics</h2>
-                    <p>HTML,CSS</p>
-                <ul>
-                    <li>TP ayant pour objectif la creation d'un article en HTML,CSS grace aux données fournit</li>
-                </ul>
-            </div>
-            <div class="imgrevers">
-                <a href="https://areslane67.github.io/TP_Batman/index.html"><img src="./assetWeb/Comics.png" alt="image"></a>
-            </div>
-        </section>
-        <section id="Formulaire">
-            <div>
-                <span class="date">30 Mars 2023</span>
-                    <h2>gmail</h2>
-                    <p>HTML,CSS,php</p>
-                <ul>
-                    <li>TP ayant pour objectif la creation d'un système de connexion pour accedera ta fausse page gmail</li>
-                </ul>
-            </div>
-            <div class="img">
-                <a href="https://areslane67.github.io/gmail/index.html"><img src="./assets/gmail.png" alt="image"></a>
-            </div>
-        </section>
-        <section class="revers" id="Article">
-            <div>
-                <span class="date">6 Octobre 2022</span>
-                    <h2>Amazone</h2>
-                    <p>HTML,CSS</p>
-                <ul>
-                    <li>TP ayant pour objectif la recreation d'une page de vente en HTML,CSS grace aux données fournit</li>
-                </ul>
-            </div>
-            <div class="imgrevers">
-                <a href="https://areslane67.github.io/TP_Batman/index.html"><img src="./assets/amaz.png" alt="image"></a>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer">
-            <section class="reseau"> 
-                <h3>Follow Me</h3>
-            <div>
-                <a href="https://www.instagram.com/_areslane_/"><img src="./assets/Instagram_icon-icons.com_66804(1).png" alt="image"></a>
-                <a href="https://github.com/areslane67"><img src="./assets/github_logo_icon_188438.png" alt="image"></a>
-                <a href="https://www.linkedin.com/in/areslane-haddadi-9260131a1/"><img src="./assets/linkedin_icon-icons.com_65929.png" alt="image"></a>
-            </div>
-            </section>
-            <section class="plus">
-                <h3>Contact</h3>
-            <div class="flex">
-                <div>
-                    <img src="./assets/gmail_new_logo_icon_159149.png" alt="image"><a href="mailto:areslane67@gmail.com">areslane67@gmail.com</a>
-                </div>
-                <div>
-                    <img src="./assets/telephone_phone_16772.png" alt="image"><a href="tel:0667081522">06 67 08 15 22</a>
-                </div>
-                <div class="curriculum">
-                    <img src="./assets/cv_102350.png" alt="image"><a href="./assetWeb/CV.pdf" target="blank">curriculum vitae</a>
-                </div>
-            </div>
-            </section>
+          </article>
         </div>
-                <p id="footer">&copy; Areslane - 2026 -</p>
-    </footer>
-    <script src="./js/app.js"></script>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span data-year>2026</span> Areslane Haddadi</p>
+      <nav class="footer-links" aria-label="Liens du pied de page">
+        <a href="https://github.com/areslane67" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/areslane-haddadi-9260131a1/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:areslane67@gmail.com">E-mail</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>

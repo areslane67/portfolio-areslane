@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>League staff management (Java) — Areslane Haddadi</title>
+  <meta name="description" content="BTS SIO Java project: an application for managing league employees, with a JDBC database, three permission levels, unit tests and a graphical interface.">
+  <meta name="theme-color" content="#08081a">
+  <link rel="canonical" href="https://areslane67.github.io/portfolio-areslane/en/java-project.html">
+  <link rel="alternate" hreflang="fr" href="https://areslane67.github.io/portfolio-areslane/traveaux1.html">
+  <link rel="alternate" hreflang="en" href="https://areslane67.github.io/portfolio-areslane/en/java-project.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="League staff management (Java) — Areslane Haddadi">
+  <meta property="og:url" content="https://areslane67.github.io/portfolio-areslane/en/java-project.html">
+  <meta property="og:image" content="https://areslane67.github.io/portfolio-areslane/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="../css/main.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header is-solid">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Areslane Haddadi, back to home page">
+        <span class="brand-name" aria-hidden="true">Areslane<span class="brand-dot">.</span></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Main menu">
+        <a href="index.html#about">About</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#projects" aria-current="page">Projects</a>
+        <a href="index.html#background">Background</a>
+        <a href="tech-watch.html">Tech watch</a>
+        <a href="index.html#contact">Contact</a>
+        <a class="btn btn-primary btn-sm" href="../assetWeb/CV.pdf" target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="../img/icons.svg#download"/></svg> CV (FR)
+        </a>
+      </nav>
+      <a class="lang-switch" href="../traveaux1.html" hreflang="fr" lang="fr" aria-label="Version française">FR</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+        <svg class="icon icon-menu" aria-hidden="true"><use href="../img/icons.svg#menu"/></svg>
+        <svg class="icon icon-close" aria-hidden="true"><use href="../img/icons.svg#close"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="page-hero">
+      <div class="container">
+        <a class="back-link" href="index.html#projects">
+          <svg class="icon" aria-hidden="true"><use href="../img/icons.svg#arrow-left"/></svg> Back to projects
+        </a>
+        <p class="eyebrow">// BTS SIO · Java professional workshop · team project</p>
+        <h1>League staff management (M2L)</h1>
+        <p class="lead">
+          Turning a command-line Java application that only one person could use
+          into a multi-user application with a database, three permission levels and a graphical interface.
+        </p>
+        <ul class="tags">
+          <li class="tag">Java</li><li class="tag">JDBC</li><li class="tag">MySQL</li>
+          <li class="tag">Unit tests</li><li class="tag">GUI</li><li class="tag">Data modeling (MCD)</li>
+        </ul>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://github.com/areslane67/personnel" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="../img/icons.svg#github"/></svg> View the code
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="block reveal">
+          <h2>The requirements</h2>
+          <p>
+            A manager at the Maison des Ligues (M2L), a sports leagues organization, uses an application to manage the leagues' employees.
+            It only runs from the command line and can be used by just one person at a time. The goal: appoint
+            an administrator for each league, responsible for registering that league's employees.
+          </p>
+          <ul class="list">
+            <li><strong>Employee</strong>: browses the application like a directory, with no write access.</li>
+            <li><strong>League administrator</strong>: manages the employees of their own league from a desktop application.</li>
+            <li><strong>Super administrator</strong>: edits all employees and manages administrator accounts from the command line.</li>
+          </ul>
+          <figure class="figure figure-wide" style="margin-top:1.5rem">
+            <img src="../img/ap/code-java.webp" alt="Java code for the database connection in Eclipse" width="1200" height="634" loading="lazy">
+            <figcaption>MySQL database connection class using JDBC.</figcaption>
+          </figure>
+        </div>
+
+        <div class="block">
+          <h2 class="reveal">Built in 4 iterations</h2>
+          <div class="grid-2">
+            <article class="card step-card reveal">
+              <span class="step-num">Iteration 1</span>
+              <h3>Modeling and testing</h3>
+              <ul class="list">
+                <li>Database modeling with a conceptual data model (MCD)</li>
+                <li>Unit tests to check that the application works correctly</li>
+                <li>Handling each employee's start and departure dates</li>
+                <li>Mind map of the command-line menus</li>
+              </ul>
+            </article>
+            <article class="card step-card reveal">
+              <span class="step-num">Iteration 2</span>
+              <h3>Database and menus</h3>
+              <ul class="list">
+                <li>Creating the database</li>
+                <li>Handling dates in the command-line menus</li>
+                <li>Selecting an employee before they can be edited or deleted</li>
+                <li>Changing a league's administrator</li>
+              </ul>
+            </article>
+            <article class="card step-card reveal">
+              <span class="step-num">Iteration 3</span>
+              <h3>JDBC connection and mockups</h3>
+              <ul class="list">
+                <li>Subclass of <code>Passerelle</code> to handle the database connection with JDBC</li>
+                <li>Mockups of the graphical interface</li>
+              </ul>
+            </article>
+            <article class="card step-card reveal">
+              <span class="step-num">Iteration 4</span>
+              <h3>Graphical interface and deployment</h3>
+              <ul class="list">
+                <li>Graphical interface for administrators to manage their league</li>
+                <li>A league without an administrator is automatically managed by the root account (with unit tests)</li>
+                <li>Installing the database on a server on the local network</li>
+                <li>Writing a user guide for administrators</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+
+        <div class="block">
+          <h2 class="reveal">Modeling</h2>
+          <div class="figures">
+            <figure class="figure on-white reveal">
+              <img src="../img/ap/mcd-ligues.webp" alt="Conceptual data model: leagues and employees" width="256" height="247" loading="lazy" style="max-width:280px;margin-inline:auto">
+              <figcaption>Conceptual data model (MCD) of leagues and employees.</figcaption>
+            </figure>
+            <figure class="figure on-white reveal">
+              <img src="../img/ap/arbre-heuristique.webp" alt="Mind map of the application's menus" width="1003" height="673" loading="lazy">
+              <figcaption>Mind map of the command-line menus.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="block">
+          <h2 class="reveal">Interface mockups</h2>
+          <div class="figures">
+            <figure class="figure reveal">
+              <img src="../img/ap/maquette-accueil.webp" alt="Mockup of the home screen" width="950" height="650" loading="lazy">
+              <figcaption>Home</figcaption>
+            </figure>
+            <figure class="figure reveal">
+              <img src="../img/ap/maquette-connexion.webp" alt="Mockup of the login screen" width="950" height="650" loading="lazy">
+              <figcaption>Login</figcaption>
+            </figure>
+            <figure class="figure reveal">
+              <img src="../img/ap/maquette-gestion.webp" alt="Mockup of the employee management screen" width="950" height="650" loading="lazy">
+              <figcaption>Employee management</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="block">
+          <h2 class="reveal">Skills applied (BTS SIO framework)</h2>
+          <div class="grid-3">
+            <article class="card skill-block reveal">
+              <h3>Managing IT assets</h3>
+              <dl>
+                <dt>Setting up and verifying authorization levels</dt>
+                <dd>Separate employee, administrator and super administrator roles.</dd>
+                <dt>Managing backups</dt>
+                <dd>Code versioned on GitHub and data stored in a database.</dd>
+              </dl>
+            </article>
+            <article class="card skill-block reveal">
+              <h3>Working in project mode</h3>
+              <dl>
+                <dt>Analyzing objectives and organization</dt>
+                <dd>Roles and tasks shared out within the group.</dd>
+                <dt>Planning activities</dt>
+                <dd>Schedule tracked with Trello and Asana.</dd>
+                <dt>Monitoring the project and analyzing deviations</dt>
+                <dd>Work split into short-deadline iterations, with follow-up from the teacher.</dd>
+              </dl>
+            </article>
+            <article class="card skill-block reveal">
+              <h3>Delivering a service to users</h3>
+              <dl>
+                <dt>Integration and acceptance testing</dt>
+                <dd>Unit tests for every feature.</dd>
+                <dt>Deploying a service</dt>
+                <dd>Deployed on a server provided by the school.</dd>
+                <dt>Supporting users</dt>
+                <dd>Documentation for users and developers.</dd>
+              </dl>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span data-year>2026</span> Areslane Haddadi</p>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="https://github.com/areslane67" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/areslane-haddadi-9260131a1/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:areslane67@gmail.com">Email</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

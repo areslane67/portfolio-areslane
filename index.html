@@ -1,148 +1,574 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./assets/icon-5404125_960_720.png">
-    <link rel="stylesheet" href="./css/header.css">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Areslane Haddadi — Développeur web full-stack</title>
+  <meta name="description" content="Portfolio d'Areslane Haddadi, développeur web full-stack en Mastère Expert IT à ITIC Paris, en recherche d'alternance : projets en React, TypeScript, Node.js, PHP, Java et Python.">
+  <meta name="theme-color" content="#08081a">
+  <link rel="canonical" href="https://areslane67.github.io/portfolio-areslane/">
+  <link rel="alternate" hreflang="fr" href="https://areslane67.github.io/portfolio-areslane/">
+  <link rel="alternate" hreflang="en" href="https://areslane67.github.io/portfolio-areslane/en/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Areslane Haddadi — Développeur web full-stack">
+  <meta property="og:description" content="En recherche d'alternance · Mastère Expert IT à ITIC Paris. Projets en React, TypeScript, Node.js, PHP, Java et Python.">
+  <meta property="og:url" content="https://areslane67.github.io/portfolio-areslane/">
+  <meta property="og:image" content="https://areslane67.github.io/portfolio-areslane/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/main.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-<header>
-<span class="burger" aria-hidden="true" >☰</span>
-            <div class="close-menu">
-                <nav>
-                    <ul class="close">
-                        <li><a href="#compétences">Compétences</a></li>
-                        <li><a href="#travaux">Travaux</a></li>
-                        <li><a href="#loisirs">Loisirs</a></li>
-                        <li><a href="./parcour.html">Parcours scolaire</a></li>
-                        <li><a href="./stage.html">Formation et stage</a></li>
-                        <li><a href="#footer">Contact</a></li>
-                    </ul>
-                    <ul class="reseau">
-                        <li><a href="https://www.instagram.com/_areslane_/"><img src="./assets/Instagram_icon-icons.com_66804(1).png" alt="image"></a></li>
-                        <li><a href="https://github.com/areslane67"><img src="./assets/github_logo_icon_188438.png" alt="image"></a></li>
-                        <li><a href="https://www.linkedin.com/in/areslane-haddadi-9260131a1/"><img src="./assets/linkedin_icon-icons.com_65929.png" alt="image"></a></li>
-                    </ul>
-                    <section class="plus">
-                        <h3>Contact</h3>
-                    <div class="flex">
-                        <div>
-                            <img src="./assets/gmail_new_logo_icon_159149.png" alt="image"><a href="mailto:areslane67@gmail.com">areslane67@gmail.com</a>
-                        </div>
-                        <div>
-                            <img src="./assets/telephone_phone_16772.png" alt="image"><a href="tel:0667081522">06 67 08 15 22</a>
-                        </div>
-                        <div class="curriculum">
-                            <img src="./assets/cv_102350.png" alt="image"><a href="./assets/CV.pdf" target="blank">curriculum vitae</a>
-                        </div>
-                        <div class="curriculum">
-                            <img src="./assets/file_type_powerpoint_icon_130245.png" alt="image"><a href="./assetDiplome/Series_Screenwriter_Portfolio_by_Slidesgo.pdf" target="blank">Powerpoint</a>
-                        </div>
-                    </div>
-                    </section>
-                </nav>
-            </div>
-</header>
-<main>
-    <div class="aside" role="complementary">
-        <div class="H">
-            <h3>Areslane HADDADI</h3>
-            <h4>Développeur Front-End</h4>
-        </div>
-        <div class="fx">
-            <a href="./veille-technologique.html" class="veil">Veille-technologique <img src="./assets/arrow_sign_up_down_back_left_right_icon_150510.png" alt="image"></a>
-        </div>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#accueil" aria-label="Areslane Haddadi, retour en haut de page">
+        <span class="brand-name" aria-hidden="true">Areslane<span class="brand-dot">.</span></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Menu principal">
+        <a href="#a-propos">À propos</a>
+        <a href="#competences">Compétences</a>
+        <a href="#projets">Projets</a>
+        <a href="#parcours">Parcours</a>
+        <a href="veille-technologique.html">Veille</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-primary btn-sm" href="assetWeb/CV.pdf" target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="img/icons.svg#download"/></svg> Mon CV
+        </a>
+      </nav>
+      <a class="lang-switch" href="en/index.html" hreflang="en" lang="en" aria-label="English version">EN</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu">
+        <svg class="icon icon-menu" aria-hidden="true"><use href="img/icons.svg#menu"/></svg>
+        <svg class="icon icon-close" aria-hidden="true"><use href="img/icons.svg#close"/></svg>
+      </button>
     </div>
-    <section class="img" id="compétences">
-        <h2 class="titre1">Logiciels & Editeurs Web</h2>
-<ul>
-        <li><img src="./assets/css_original_wordmark_logo_icon_146576.png" alt="CSS3"></li>
-        <li><img src="./assets/html_original_wordmark_logo_icon_146478.png" alt="Photoshop"></li>
-        <li><img src="./assets/JavaScript_logo.png" alt="JS6"></li>
-        <li><img src="./assets/java.png" alt="HTML5"></li>
-        <li><img src="./assets/file_type_git_icon_130581.png" alt="image"></li>
-        <li><img src="./assets/file_type_php_icon_130266.png" alt="image"></li>
-        <li><img src="./assets/SQL.png" alt=""></li>
-</ul>
-    </section>
-    <section class="travaux" id="travaux">
-        <h2 class="titre1">Travaux</h2>
-    <ul>
-        <li><h3>Travaux WEB</h3><a href="./traveaux.html"><img src="./assets/web_development_coding_code_browse_browser_icon-icons.com_59980.png" alt="image"></a></li>
-        <li><h3>Travaux AP JAVA - BTS</h3><a href="./traveaux1.html"><img src="./assets/3709742-board-forum-information-text-web_108094.png" alt="image"></a></li>
-        <li><h3>Travaux AP WEB - BTS</h3><a href="./traveaux2.html"><img src="./assets/3709742-board-forum-information-text-web_108094.png" alt="image"></a></li>
-    </ul>    
-    </section>
-    <section class="img" id="loisirs">
-        <h2 class="titre1">Loisirs</h2>
-    <ul>
-        <li><img src="./assets/Photo.png" alt="image"></li>
-        <li><img src="./assets/Voyage.png" alt="image"></li>
-        <li><img src="./assets/Filme.png" alt="image"></li>
-        <li><img src="./assets/Musique.png" alt="image"></li>
-    </ul>    
+  </header>
+
+  <main id="contenu">
+    <!-- Accueil -->
+    <section class="hero" id="accueil">
+      <div class="hero-bg" aria-hidden="true">
+        <picture>
+          <source media="(max-width: 700px) and (prefers-reduced-motion: reduce)" srcset="img/hero-mobile-static.webp">
+          <source media="(max-width: 700px)" srcset="img/hero-mobile.webp">
+          <source media="(prefers-reduced-motion: reduce)" srcset="img/hero-static.webp">
+          <img src="img/hero.webp" alt="" width="480" height="270" fetchpriority="high">
+        </picture>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>En recherche d'alternance</p>
+          <h1>Areslane <span class="gradient-text">Haddadi</span></h1>
+          <p class="hero-role">Développeur web full-stack</p>
+          <p class="hero-pitch">
+            Étudiant en Mastère Expert IT à ITIC Paris, je cherche une <strong>alternance en développement web</strong>.
+            Je conçois des applications de la maquette à la base de données&nbsp;: React et TypeScript,
+            Node.js, PHP ou Java, et Python pour la data.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projets">
+              Voir mes projets <svg class="icon" aria-hidden="true"><use href="img/icons.svg#arrow-right"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="assetWeb/CV.pdf" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="img/icons.svg#download"/></svg> Télécharger mon CV
+            </a>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/areslane67" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg class="icon" aria-hidden="true"><use href="img/icons.svg#github"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/areslane-haddadi-9260131a1/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg class="icon" aria-hidden="true"><use href="img/icons.svg#linkedin"/></svg>
+            </a>
+            <a href="mailto:areslane67@gmail.com" aria-label="Envoyer un e-mail">
+              <svg class="icon" aria-hidden="true"><use href="img/icons.svg#mail"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    
-    <div class="close-menu">
-        <nav>
-                <section id="formation">
-                    <h2>Parcours scolaire</h2>
-                    <ul>
-                        <li><h3>Brevet des collèges</h3><img src="./assets/certificate_icon_129074.png" alt="image"></li>
-                        <li><h3>Baccalauréat</h3><img src="./assets/127535051_103070054985553_6417931325537438736_n.png" alt="image"></li>
-                        <li><h3>Brevet de technicien supérieur</h3><img src="./assets/Capture.png" alt="image"></li>
-                        <li><h3>Voir plus de detail</h3><a href="./parcour.html"><img src="./assets/arrow_sign_up_down_back_left_right_icon_150510.png" alt="image"></a></li>
-                    </ul>
-                </section>
-                <section id="Expérience1">
-                    <h2>Formation et stage</h2>
-                    <ul>
-                        <li><h3>PARIS BUSINESS & LEISURE (stage)</h3><a href="./stage.html"><img src="./assets/logo.webp" alt="image"></a></li>
-                    </ul>  
-                </section>
-        </nav>
-    </div>
+    <!-- À propos -->
+    <section class="section" id="a-propos">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">// à propos</p>
+          <h2>Qui suis-je&nbsp;?</h2>
+        </div>
+        <div class="about">
+          <div class="about-text reveal">
+            <p>
+              Je suis étudiant en <strong>Mastère européen Expert IT – Applications intelligentes et Big Data</strong>
+              à ITIC Paris, après un BTS SIO et un Bachelor Concepteur Développeur d'Applications dans la même école.
+            </p>
+            <p>
+              J'aime travailler sur toute la chaîne d'un projet&nbsp;: la conception (MCD, UML, maquettes Figma),
+              le front-end, l'API et la base de données. En équipe, je travaille en méthode agile (Scrum)
+              avec un vrai workflow Git&nbsp;: branches, pull requests et revues de code.
+            </p>
+            <p>
+              En dehors du code, je fais de la musculation, je voyage pour découvrir d'autres cultures
+              et je crée des niveaux de jeu vidéo sur Unreal Engine.
+            </p>
+          </div>
+          <dl class="facts card reveal">
+            <div class="fact fact-highlight">
+              <dt>Je recherche</dt>
+              <dd>Une alternance en développement web</dd>
+            </div>
+            <div class="fact">
+              <dt>Formation actuelle</dt>
+              <dd>Mastère Expert IT · ITIC Paris (2024-2026)</dd>
+            </div>
+            <div class="fact">
+              <dt>Langues</dt>
+              <dd>Français (langue maternelle) · Anglais C1</dd>
+            </div>
+            <div class="fact">
+              <dt>Localisation</dt>
+              <dd>Île-de-France</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
 
-    <div class="bloc">
-    <span class="plus1" aria-hidden="true">+ Plus</span>
-    </div>
-    
-</main>
-<footer>
-    <div class="footer">
-        <section class="reseau"> 
-            <h3>Follow Me</h3>
-        <div>
-            <a href="https://www.instagram.com/_areslane_/"><img src="./assets/Instagram_icon-icons.com_66804(1).png" alt="image"></a>
-            <a href="https://github.com/areslane67"><img src="./assets/github_logo_icon_188438.png" alt="image"></a>
-            <a href="https://www.linkedin.com/in/areslane-haddadi-9260131a1/"><img src="./assets/linkedin_icon-icons.com_65929.png" alt="image"></a>
+    <!-- Compétences -->
+    <section class="section section-alt" id="competences">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">// compétences</p>
+          <h2>Ma boîte à outils</h2>
+          <p>Les langages, frameworks et outils que j'utilise en cours et sur mes projets.</p>
         </div>
-        </section>
-        <section class="plus">
-            <h3>Contact</h3>
-        <div class="flex">
-            <div>
-                <img src="./assets/gmail_new_logo_icon_159149.png" alt="image"><a href="mailto:areslane67@gmail.com">areslane67@gmail.com</a>
-            </div>
-            <div>
-                <img src="./assets/telephone_phone_16772.png" alt="image"><a href="tel:0667081522">06 67 08 15 22</a>
-            </div>
-            <div class="curriculum">
-                <img src="./assets/cv_102350.png" alt="image"><a href="./assetWeb/CV.pdf" target="blank">curriculum vitae</a>
-            </div>
-            <div class="curriculum">
-                <img src="./assets/file_type_powerpoint_icon_130245.png" alt="image"><a href="./assetWeb/Portfolio-Presentation-for-Jane-Smith.pdf-2.pdf" target="blank">Powerpoint</a>
-            </div>
+        <div class="skills-grid">
+          <article class="card skill-card reveal">
+            <h3><span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#code"/></svg></span>Front-end</h3>
+            <ul class="tech-list">
+              <li class="tech"><img src="img/tech/html.svg" alt="" width="22" height="22" loading="lazy">HTML</li>
+              <li class="tech"><img src="img/tech/css.svg" alt="" width="22" height="22" loading="lazy">CSS</li>
+              <li class="tech"><img src="img/tech/sass.svg" alt="" width="22" height="22" loading="lazy">SASS</li>
+              <li class="tech"><img src="img/tech/javascript.svg" alt="" width="22" height="22" loading="lazy">JavaScript</li>
+              <li class="tech"><img src="img/tech/typescript.svg" alt="" width="22" height="22" loading="lazy">TypeScript</li>
+              <li class="tech"><img src="img/tech/react.svg" alt="" width="22" height="22" loading="lazy">React</li>
+              <li class="tech"><img src="img/tech/angular.svg" alt="" width="22" height="22" loading="lazy">Angular</li>
+            </ul>
+          </article>
+          <article class="card skill-card reveal">
+            <h3><span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#tools"/></svg></span>Outils &amp; méthodes</h3>
+            <ul class="tech-list">
+              <li class="tech"><img src="img/tech/git.svg" alt="" width="22" height="22" loading="lazy">Git</li>
+              <li class="tech"><img src="img/tech/github.svg" alt="" width="22" height="22" loading="lazy">GitHub</li>
+              <li class="tech"><img src="img/tech/vscode.svg" alt="" width="22" height="22" loading="lazy">VS Code</li>
+              <li class="tech"><img src="img/tech/intellij.svg" alt="" width="22" height="22" loading="lazy">IntelliJ</li>
+              <li class="tech"><img src="img/tech/eclipse.svg" alt="" width="22" height="22" loading="lazy">Eclipse</li>
+              <li class="tech"><img src="img/tech/postman.svg" alt="" width="22" height="22" loading="lazy">Postman</li>
+              <li class="tech"><img src="img/tech/swagger.svg" alt="" width="22" height="22" loading="lazy">Swagger</li>
+              <li class="tech"><img src="img/tech/trello.svg" alt="" width="22" height="22" loading="lazy">Trello</li>
+              <li class="tech"><span class="tech-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#repeat"/></svg></span>Scrum</li>
+            </ul>
+          </article>
+          <article class="card skill-card reveal">
+            <h3><span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#server"/></svg></span>Back-end</h3>
+            <ul class="tech-list">
+              <li class="tech"><img src="img/tech/nodejs.svg" alt="" width="22" height="22" loading="lazy">Node.js</li>
+              <li class="tech"><img src="img/tech/express.svg" alt="" width="22" height="22" loading="lazy">Express</li>
+              <li class="tech"><img src="img/tech/php.svg" alt="" width="22" height="22" loading="lazy">PHP</li>
+              <li class="tech"><img src="img/tech/java.svg" alt="" width="22" height="22" loading="lazy">Java</li>
+              <li class="tech"><img src="img/tech/spring.svg" alt="" width="22" height="22" loading="lazy">Spring Boot</li>
+              <li class="tech"><span class="tech-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#plug"/></svg></span>API REST</li>
+            </ul>
+          </article>
+          <article class="card skill-card reveal">
+            <h3><span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#database"/></svg></span>Bases de données</h3>
+            <ul class="tech-list">
+              <li class="tech"><img src="img/tech/mysql.svg" alt="" width="22" height="22" loading="lazy">MySQL</li>
+              <li class="tech"><img src="img/tech/mongodb.svg" alt="" width="22" height="22" loading="lazy">MongoDB</li>
+              <li class="tech"><img src="img/tech/phpmyadmin.svg" alt="" width="22" height="22" loading="lazy">phpMyAdmin</li>
+              <li class="tech"><img src="img/tech/xampp.svg" alt="" width="22" height="22" loading="lazy">XAMPP</li>
+            </ul>
+          </article>
+          <article class="card skill-card reveal">
+            <h3><span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#chart"/></svg></span>Data &amp; web scraping</h3>
+            <ul class="tech-list">
+              <li class="tech"><img src="img/tech/python.svg" alt="" width="22" height="22" loading="lazy">Python</li>
+              <li class="tech"><img src="img/tech/selenium.svg" alt="" width="22" height="22" loading="lazy">Selenium</li>
+              <li class="tech"><span class="tech-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#soup"/></svg></span>BeautifulSoup</li>
+              <li class="tech"><img src="img/tech/pandas.svg" alt="" width="22" height="22" loading="lazy">Pandas</li>
+              <li class="tech"><img src="img/tech/jupyter.svg" alt="" width="22" height="22" loading="lazy">Jupyter</li>
+              <li class="tech"><img src="img/tech/anaconda.svg" alt="" width="22" height="22" loading="lazy">Anaconda</li>
+            </ul>
+          </article>
+          <article class="card skill-card reveal">
+            <h3><span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#pen"/></svg></span>Conception</h3>
+            <ul class="tech-list">
+              <li class="tech"><span class="tech-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#network"/></svg></span>MCD/MLD/MPD</li>
+              <li class="tech"><img src="img/tech/uml.svg" alt="" width="22" height="22" loading="lazy">UML</li>
+              <li class="tech"><span class="tech-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#layout"/></svg></span>Zoning</li>
+              <li class="tech"><span class="tech-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#wireframe"/></svg></span>Wireframes</li>
+              <li class="tech"><img src="img/tech/figma.svg" alt="" width="22" height="22" loading="lazy">Figma</li>
+              <li class="tech"><img src="img/tech/canva.svg" alt="" width="22" height="22" loading="lazy">Canva</li>
+            </ul>
+          </article>
         </div>
-        </section>
+      </div>
+    </section>
+
+    <!-- Projets -->
+    <section class="section" id="projets">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">// projets</p>
+          <h2>Projets récents</h2>
+          <p>Une sélection de projets réalisés seul ou en équipe, du Mastère au BTS.</p>
+        </div>
+
+        <div class="projects">
+          <article class="project reveal">
+            <div class="project-media">
+              <img src="img/projets/five-cup.webp" alt="Page d'accueil du site ITIC Five Cup" width="800" height="500" loading="lazy">
+            </div>
+            <div class="project-body">
+              <p class="project-meta"><span>2026</span><span class="live">En ligne</span></p>
+              <h3>ITIC Five Cup</h3>
+              <p>
+                Préinscription au tournoi de foot à 5 de l'école&nbsp;: inscription seul, entre amis ou en capitaine,
+                et espace d'administration sécurisé pour le BDE.
+              </p>
+              <ul class="tags">
+                <li class="tag">React</li><li class="tag">Vite</li><li class="tag">Node.js</li>
+                <li class="tag">Express</li><li class="tag">MySQL</li><li class="tag">JWT</li>
+              </ul>
+              <div class="project-links">
+                <a class="link-btn" href="https://itic-five-cup.vercel.app" target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="img/icons.svg#external"/></svg> Voir le site
+                </a>
+                <a class="link-btn" href="https://github.com/areslane67/itic-five-cup" target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="img/icons.svg#github"/></svg> Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-media">
+              <img src="img/projets/brainburst.webp" alt="Écran d'accueil de l'application de quiz BrainBurst" width="800" height="500" loading="lazy">
+            </div>
+            <div class="project-body">
+              <p class="project-meta"><span>2025 · équipe de 3</span><span class="live">En ligne</span></p>
+              <h3>BrainBurst — quiz interactif</h3>
+              <p>
+                Quiz par thème et par niveau, avec score et mode «&nbsp;hardcore&nbsp;».
+                J'ai conçu les maquettes et développé des interfaces et l'API.
+              </p>
+              <ul class="tags">
+                <li class="tag">React</li><li class="tag">TypeScript</li><li class="tag">Figma</li>
+                <li class="tag">GitHub</li><li class="tag">Trello</li>
+              </ul>
+              <div class="project-links">
+                <a class="link-btn" href="https://brainsburst-itic.netlify.app" target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="img/icons.svg#external"/></svg> Voir le site
+                </a>
+                <a class="link-btn" href="https://github.com/Duorly/react-quizz-app" target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="img/icons.svg#github"/></svg> Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-media">
+              <div class="code-visual" aria-hidden="true">
+                <div class="code-window">
+                  <div class="code-window-bar"><i></i><i></i><i></i></div>
+<pre><span class="k">from</span> selenium <span class="k">import</span> webdriver
+<span class="k">from</span> bs4 <span class="k">import</span> BeautifulSoup
+
+driver.<span class="f">get</span>(url)
+soup = <span class="f">BeautifulSoup</span>(driver.page_source)
+df = pd.<span class="f">DataFrame</span>(lignes)
+df.<span class="f">to_sql</span>(<span class="s">"donnees"</span>, connexion)</pre>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <p class="project-meta"><span>2025 · équipe de 3</span></p>
+              <h3>Extraction de données web</h3>
+              <p>
+                Récupération automatique de données sur des sites web et intégration dans une base MySQL&nbsp;:
+                scripts d'extraction et configuration de la base.
+              </p>
+              <ul class="tags">
+                <li class="tag">Python</li><li class="tag">Selenium</li><li class="tag">BeautifulSoup</li>
+                <li class="tag">Jupyter</li><li class="tag">MySQL</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-media">
+              <div class="code-visual" aria-hidden="true">
+                <div class="code-window">
+                  <div class="code-window-bar"><i></i><i></i><i></i></div>
+<pre><span class="k">const</span> [transactions, setTransactions] =
+  <span class="f">useState</span>&lt;Transaction[]&gt;([]);
+
+<span class="k">const</span> solde = revenus - depenses;
+
+localStorage.<span class="f">setItem</span>(
+  <span class="s">"transactions"</span>,
+  JSON.<span class="f">stringify</span>(transactions)
+);</pre>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <p class="project-meta"><span>2026 · TP React</span></p>
+              <h3>Budget Tracker</h3>
+              <p>
+                Gestion de budget&nbsp;: revenus et dépenses, solde et statistiques, filtres
+                et sauvegarde automatique dans le navigateur.
+              </p>
+              <ul class="tags">
+                <li class="tag">React</li><li class="tag">TypeScript</li><li class="tag">localStorage</li>
+              </ul>
+              <div class="project-links">
+                <a class="link-btn" href="https://github.com/areslane67/budget-tracker" target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="img/icons.svg#github"/></svg> Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-media">
+              <img src="img/projets/intranet-mdl.webp" alt="Maquette de la page d'accueil de l'intranet" width="800" height="395" loading="lazy">
+            </div>
+            <div class="project-body">
+              <p class="project-meta"><span>2023 · BTS SIO</span></p>
+              <h3>Intranet collaborateurs (MDL)</h3>
+              <p>
+                Plateforme interne pour faciliter les échanges entre collègues&nbsp;: inscription, connexion,
+                annuaire en cartes et modification du profil.
+              </p>
+              <ul class="tags">
+                <li class="tag">PHP</li><li class="tag">MySQL</li><li class="tag">HTML</li><li class="tag">CSS</li>
+              </ul>
+              <div class="project-links">
+                <a class="link-btn" href="traveaux2.html">
+                  <svg class="icon" aria-hidden="true"><use href="img/icons.svg#arrow-right"/></svg> Détails
+                </a>
+                <a class="link-btn" href="https://github.com/areslane67/ProjetWeb2023" target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="img/icons.svg#github"/></svg> Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-media">
+              <img src="img/projets/personnel-m2l.webp" alt="Maquette de l'écran de gestion des employés" width="800" height="547" loading="lazy">
+            </div>
+            <div class="project-body">
+              <p class="project-meta"><span>2023 · BTS SIO · en équipe</span></p>
+              <h3>Personnel des ligues (Java)</h3>
+              <p>
+                Gestion des employés des ligues avec trois niveaux de droits, base de données via JDBC,
+                tests unitaires et interface graphique.
+              </p>
+              <ul class="tags">
+                <li class="tag">Java</li><li class="tag">JDBC</li><li class="tag">MySQL</li><li class="tag">Tests unitaires</li>
+              </ul>
+              <div class="project-links">
+                <a class="link-btn" href="traveaux1.html">
+                  <svg class="icon" aria-hidden="true"><use href="img/icons.svg#arrow-right"/></svg> Détails
+                </a>
+                <a class="link-btn" href="https://github.com/areslane67/personnel" target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="img/icons.svg#github"/></svg> Code
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="more-link reveal">
+          <p><strong>Et aussi&nbsp;:</strong> mes TP web de 2020 à 2024 (Google, Instagram, Gmail, Amazon, slider, blog…).</p>
+          <a class="btn btn-ghost btn-sm" href="traveaux.html">
+            Voir les TP <svg class="icon" aria-hidden="true"><use href="img/icons.svg#arrow-right"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parcours -->
+    <section class="section section-alt" id="parcours">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">// parcours</p>
+          <h2>Formations et expériences</h2>
+        </div>
+        <div class="timeline-grid">
+          <div class="reveal">
+            <h3 class="timeline-title">
+              <span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#graduation"/></svg></span>Formations et diplômes
+            </h3>
+            <ol class="timeline">
+              <li class="tl-item is-current">
+                <span class="tl-date">2024 – 2026 · en cours</span>
+                <h4>Mastère européen Expert IT – Applications intelligentes et Big Data</h4>
+                <p class="tl-place">ITIC Paris</p>
+              </li>
+              <li class="tl-item">
+                <span class="tl-date">2023 – 2024</span>
+                <h4>Bachelor Concepteur Développeur d'Applications (CDA)</h4>
+                <p class="tl-place">ITIC Paris</p>
+              </li>
+              <li class="tl-item">
+                <span class="tl-date">2020 – 2023</span>
+                <h4>BTS Services Informatiques aux Organisations (SIO)</h4>
+                <p class="tl-place">ITIC Paris</p>
+              </li>
+              <li class="tl-item">
+                <span class="tl-date">2020</span>
+                <h4>CESS (baccalauréat belge), technicien en comptabilité</h4>
+                <p class="tl-place">Athénée Royal d'Ixelles, Belgique</p>
+                <ul>
+                  <li>Avec le certificat de qualification (CQ6) et le certificat de gestion de base</li>
+                </ul>
+                <a class="link-btn tl-doc" href="assetDiplome/Bac.pdf" target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="img/icons.svg#file"/></svg> Voir les diplômes (PDF)
+                </a>
+              </li>
+              <li class="tl-item">
+                <span class="tl-date">2016</span>
+                <h4>Brevet d'enseignement moyen (BEM)</h4>
+                <p class="tl-place">Lycée Cheikh Bouamama, Alger</p>
+                <a class="link-btn tl-doc" href="assetDiplome/Brevet.pdf" target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="img/icons.svg#file"/></svg> Voir le diplôme (PDF)
+                </a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="reveal">
+            <h3 class="timeline-title">
+              <span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#briefcase"/></svg></span>Expériences
+            </h3>
+            <ol class="timeline">
+              <li class="tl-item">
+                <span class="tl-date">2022 – 2024</span>
+                <h4>Serveur et barman</h4>
+                <p class="tl-place">Brasserie Le Magnolia</p>
+                <ul>
+                  <li>Service en salle et utilisation de la caisse</li>
+                  <li>Gestion des stocks d'approvisionnement</li>
+                </ul>
+              </li>
+              <li class="tl-item">
+                <span class="tl-date">Nov. – déc. 2022</span>
+                <h4>Stagiaire technicien informatique</h4>
+                <p class="tl-place">AGILITE IT</p>
+                <ul>
+                  <li>Remplacement et mise en place de postes de travail chez des clients</li>
+                  <li>Sauvegarde et transfert des données vers les nouvelles machines</li>
+                  <li>Installation du matériel et du système d'exploitation</li>
+                </ul>
+              </li>
+              <li class="tl-item">
+                <span class="tl-date">Mai – juil. 2021</span>
+                <h4>Stagiaire informatique</h4>
+                <p class="tl-place">Paris Business &amp; Leisure</p>
+                <ul>
+                  <li>Réalisation d'interfaces en HTML/CSS et évolution du site web</li>
+                  <li>Configuration et déploiement de nouveaux postes sous Linux</li>
+                  <li>Maintenance du matériel informatique</li>
+                </ul>
+              </li>
+              <li class="tl-item">
+                <span class="tl-date">2020</span>
+                <h4>Stage en comptabilité</h4>
+                <p class="tl-place">Refresh, Bruxelles</p>
+                <ul>
+                  <li>Saisie comptable avec le logiciel Ciel, classement des factures</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Veille -->
+    <section class="section section-flush-bottom" id="veille">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <div>
+            <p class="eyebrow">// veille technologique</p>
+            <h2>L'IA dans le développement web</h2>
+            <p>Comment je suis l'actualité tech, et ce que l'IA générative change pour les développeurs&nbsp;: usages, risques et bonnes pratiques.</p>
+          </div>
+          <a class="btn btn-primary" href="veille-technologique.html">
+            Lire ma veille <svg class="icon" aria-hidden="true"><use href="img/icons.svg#arrow-right"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="section-head">
+            <p class="eyebrow">// contact</p>
+            <h2>Me contacter</h2>
+            <p>Vous proposez une alternance en développement web, ou vous avez une question&nbsp;? N'hésitez pas à m'écrire.</p>
+          </div>
+          <div class="contact-list">
+            <a class="contact-item" href="mailto:areslane67@gmail.com">
+              <span class="contact-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#mail"/></svg></span>
+              <span class="contact-text"><small>E-mail</small><strong>areslane67@gmail.com</strong></span>
+            </a>
+            <a class="contact-item" href="tel:+33667081522">
+              <span class="contact-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#phone"/></svg></span>
+              <span class="contact-text"><small>Téléphone</small><strong>06 67 08 15 22</strong></span>
+            </a>
+            <a class="contact-item" href="https://www.linkedin.com/in/areslane-haddadi-9260131a1/" target="_blank" rel="noopener">
+              <span class="contact-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#linkedin"/></svg></span>
+              <span class="contact-text"><small>LinkedIn</small><strong>Areslane Haddadi</strong></span>
+            </a>
+            <a class="contact-item" href="https://github.com/areslane67" target="_blank" rel="noopener">
+              <span class="contact-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#github"/></svg></span>
+              <span class="contact-text"><small>GitHub</small><strong>areslane67</strong></span>
+            </a>
+            <a class="contact-item" href="assetWeb/CV.pdf" target="_blank" rel="noopener">
+              <span class="contact-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#file"/></svg></span>
+              <span class="contact-text"><small>CV</small><strong>Télécharger en PDF</strong></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span data-year>2026</span> Areslane Haddadi</p>
+      <nav class="footer-links" aria-label="Liens du pied de page">
+        <a href="https://github.com/areslane67" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/areslane-haddadi-9260131a1/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/_areslane_/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+      <p class="footer-credit">Illustration pixel art&nbsp;: Pixel Jeff</p>
     </div>
-            <p id="footer">&copy; Areslane - 2026 -</p>
-</footer>
-<script src="./js/app.js"></script>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <title>CV — Areslane Haddadi</title>
+  <!-- Source du CV : modifier ce fichier puis régénérer assetWeb/CV.pdf (impression A4). -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
+  <style>
+    @page { size: A4; margin: 0; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+      font-size: 8.4pt; line-height: 1.4; color: #1f2033;
+      -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    }
+    .page { width: 210mm; height: 297mm; padding: 11mm 12mm; overflow: hidden; display: flex; flex-direction: column; }
+
+    /* En-tête */
+    .head {
+      display: grid; grid-template-columns: 1fr auto; gap: 8mm; align-items: center;
+      padding: 6mm 8mm; border-radius: 4mm; color: #fff;
+      background: #0e0e2a;
+      background-image: linear-gradient(120deg, #1b1446 0%, #0e0e2a 55%, #0b2a3a 100%);
+    }
+    .head h1 { margin: 0; font-size: 23pt; font-weight: 800; letter-spacing: -.01em; line-height: 1.1; }
+    .head h1 span { color: #67e8f9; }
+    .role { margin: 1.2mm 0 3mm; font-size: 11pt; font-weight: 600; color: #ddd6fe; }
+    .seek {
+      display: inline-block; padding: 1.4mm 3.5mm; border-radius: 10mm;
+      background: #22d3ee; color: #062a33; font-weight: 700; font-size: 8.6pt;
+    }
+    .contact { margin: 0; padding: 0; list-style: none; font-size: 8.2pt; line-height: 1.75; }
+    .contact b { display: inline-block; width: 17mm; color: #a5b4fc; font-weight: 600; }
+    .contact a { color: #fff; text-decoration: none; }
+
+    /* Bandeau langues et centres d'intérêt */
+    .strip {
+      display: grid; grid-template-columns: auto 1fr; gap: 1.2mm 4mm; margin-top: 3.5mm;
+      padding: 2.6mm 5mm; border-radius: 3mm; background: #f3f0ff; font-size: 8.2pt;
+    }
+    .strip b { color: #4c1d95; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; font-size: 7.6pt; }
+
+    /* Corps */
+    .cols { flex: 1; display: grid; grid-template-columns: 1.38fr 1fr; gap: 7mm; margin-top: 4.2mm; }
+    h2 {
+      margin: 0 0 2.3mm; padding-bottom: 1.1mm; font-size: 10.5pt; font-weight: 800;
+      text-transform: uppercase; letter-spacing: .06em; color: #4c1d95;
+      border-bottom: .5mm solid #8b5cf6;
+    }
+    section + section { margin-top: 4.2mm; }
+
+    .item { margin-bottom: 2.8mm; break-inside: avoid; }
+    .item:last-child { margin-bottom: 0; }
+    .item-top { display: flex; justify-content: space-between; gap: 3mm; align-items: baseline; }
+    .item h3 { margin: 0; font-size: 9.2pt; font-weight: 700; color: #111127; }
+    .when { flex-shrink: 0; font-size: 8pt; font-weight: 700; color: #0e7490; white-space: nowrap; }
+    .where { margin: .3mm 0 .8mm; color: #55587a; font-size: 8.2pt; }
+    .env { margin: .6mm 0 .8mm; font-size: 7.8pt; color: #4c1d95; }
+    .env b { font-weight: 600; }
+    ul.dots { margin: 0; padding: 0; list-style: none; }
+    ul.dots li { position: relative; padding-left: 3.2mm; }
+    ul.dots li::before { content: ''; position: absolute; left: 0; top: 1.55mm; width: 1.4mm; height: 1.4mm; border-radius: 50%; background: #8b5cf6; }
+    .note { margin: .6mm 0 0; color: #3a3d5c; }
+    .link { color: #0e7490; text-decoration: none; font-weight: 600; }
+
+    .skill { margin-bottom: 2.2mm; }
+    .skill:last-child { margin-bottom: 0; }
+    .skill h3 { margin: 0 0 .5mm; font-size: 8.8pt; font-weight: 700; color: #111127; }
+    .skill p { margin: 0; }
+    .skill p b { font-weight: 600; color: #3a3d5c; }
+
+    .simple { margin: 0; padding: 0; list-style: none; }
+    .simple li { margin-bottom: .8mm; }
+    .simple b { font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="head">
+      <div>
+        <h1>Areslane <span>Haddadi</span></h1>
+        <p class="role">Développeur web full-stack</p>
+        <span class="seek">Recherche une alternance</span>
+      </div>
+      <ul class="contact">
+        <li><b>Téléphone</b>06 67 08 15 22</li>
+        <li><b>E-mail</b><a href="mailto:areslane67@gmail.com">areslane67@gmail.com</a></li>
+        <li><b>Adresse</b>95 rue de la Convention, 93120 La Courneuve</li>
+        <li><b>Né le</b>26/05/2000</li>
+        <li><b>LinkedIn</b><a href="https://www.linkedin.com/in/areslane-haddadi-9260131a1/">linkedin.com/in/areslane-haddadi-9260131a1</a></li>
+        <li><b>GitHub</b><a href="https://github.com/areslane67">github.com/areslane67</a></li>
+        <li><b>Portfolio</b><a href="https://areslane67.github.io/portfolio-areslane/">areslane67.github.io/portfolio-areslane</a></li>
+      </ul>
+    </header>
+
+    <div class="strip">
+      <b>Langues</b><span>Français (langue maternelle) · Anglais C1 (lu, écrit, parlé)</span>
+      <b>Intérêts</b><span>Musculation · Voyage, pour découvrir d'autres pays et cultures · Level design sur Unreal Engine</span>
+    </div>
+
+    <div class="cols">
+      <div>
+        <section>
+          <h2>Expériences</h2>
+
+          <div class="item">
+            <div class="item-top"><h3>Développeur back-end (équipe de 3)</h3><span class="when">2025 · 2 semaines</span></div>
+            <p class="where">Projet de groupe, ITIC Paris (France)</p>
+            <p class="note">Extraction de données web et intégration dans une base de données.</p>
+            <p class="env"><b>Environnement :</b> Anaconda, Jupyter Notebook, XAMPP</p>
+            <ul class="dots">
+              <li>Automatisation de la récupération de données</li>
+              <li>Configuration et gestion de la base de données</li>
+              <li>Travail en mode collaboratif</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="item-top"><h3>Développeur full-stack (équipe de 3)</h3><span class="when">2025 · 3 semaines</span></div>
+            <p class="where">Projet de groupe, ITIC Paris (France)</p>
+            <p class="note">Développement d'une application de quiz interactif. <a class="link" href="https://github.com/Duorly/react-quizz-app">github.com/Duorly/react-quizz-app</a></p>
+            <p class="env"><b>Environnement :</b> HTML, CSS, JavaScript, React, TypeScript, Figma, GitHub, Trello</p>
+            <ul class="dots">
+              <li>Développement des interfaces web et de l'API</li>
+              <li>Gestion et organisation du projet</li>
+              <li>Conception des maquettes de l'application</li>
+              <li>Travail en équipe avec revues de code et pull requests</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="item-top"><h3>Serveur et barman</h3><span class="when">2022 – 2024 · 2 ans</span></div>
+            <p class="where">Brasserie Le Magnolia (France)</p>
+            <ul class="dots">
+              <li>Nettoyage et entretien du restaurant</li>
+              <li>Gestion des stocks d'approvisionnement</li>
+              <li>Utilisation de la caisse enregistreuse</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="item-top"><h3>Stage informatique</h3><span class="when">2021 · 3 mois</span></div>
+            <p class="where">Paris Business &amp; Leisure (France)</p>
+            <ul class="dots">
+              <li>Réalisation d'interfaces graphiques en HTML/CSS</li>
+              <li>Configuration de nouveaux postes de travail</li>
+              <li>Maintenance du matériel informatique</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="item-top"><h3>Stage en comptabilité</h3><span class="when">2020 · 1 mois</span></div>
+            <p class="where">Refresh, Bruxelles (Belgique)</p>
+            <ul class="dots">
+              <li>Saisie de données avec un logiciel comptable (Ciel)</li>
+              <li>Classement et tri des factures</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="item-top"><h3>Formation « Initiation au monde du travail »</h3><span class="when">2019 · 1 semaine</span></div>
+            <p class="where">Belgique</p>
+            <p class="note">Travail, emploi, relations professionnelles et politiques publiques d'emploi.</p>
+          </div>
+
+          <div class="item">
+            <div class="item-top"><h3>Serveur et caissier</h3><span class="when">2017 · 1 mois</span></div>
+            <p class="where">Brasserie de la Patinoire (Belgique)</p>
+            <ul class="dots">
+              <li>Accueil des clients, prise de commandes, encaissement et facturation</li>
+              <li>Service en salle, mise en place et nettoyage</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <div>
+        <section>
+          <h2>Formations</h2>
+          <div class="item">
+            <div class="item-top"><h3>Mastère européen Expert IT – Applications intelligentes et Big Data</h3></div>
+            <p class="where"><span class="when">2024 – 2026</span> · ITIC Paris, Paris 20e (en cours)</p>
+          </div>
+          <div class="item">
+            <div class="item-top"><h3>Bachelor Concepteur Développeur d'Applications (CDA)</h3></div>
+            <p class="where"><span class="when">2023 – 2024</span> · ITIC Paris, Paris 20e</p>
+          </div>
+          <div class="item">
+            <div class="item-top"><h3>BTS Services Informatiques aux Organisations (SIO)</h3></div>
+            <p class="where"><span class="when">2020 – 2023</span> · ITIC Paris, Paris 20e</p>
+          </div>
+          <div class="item">
+            <div class="item-top"><h3>Certificat d'enseignement secondaire supérieur (baccalauréat), option comptabilité</h3></div>
+            <p class="where"><span class="when">2020</span> · Athénée Royal d'Ixelles (Belgique)</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Compétences</h2>
+          <div class="skill">
+            <h3>Développement front-end</h3>
+            <p>HTML, CSS, SASS, JavaScript, TypeScript, React, Angular</p>
+          </div>
+          <div class="skill">
+            <h3>Développement back-end</h3>
+            <p>PHP, Java (Spring Boot)</p>
+          </div>
+          <div class="skill">
+            <h3>Bases de données</h3>
+            <p>MySQL, phpMyAdmin, XAMPP, MongoDB (NoSQL)</p>
+          </div>
+          <div class="skill">
+            <h3>Data et web scraping</h3>
+            <p><b>Scraping :</b> Selenium, BeautifulSoup · <b>Traitement :</b> Pandas · <b>Environnements Python :</b> Anaconda, Jupyter Notebook</p>
+          </div>
+          <div class="skill">
+            <h3>Outils</h3>
+            <p><b>IDE :</b> VS Code, IntelliJ, Eclipse · <b>API et tests :</b> Postman, Swagger · <b>Versioning et gestion de projet :</b> GitHub, Trello, Gantt · <b>Design :</b> Figma, Canva</p>
+          </div>
+          <div class="skill">
+            <h3>Modélisation et conception</h3>
+            <p><b>Données :</b> MCD, MLD, MPD · <b>UML :</b> cas d'utilisation, séquence · <b>UI/UX :</b> zoning, wireframes, maquettes</p>
+          </div>
+          <div class="skill">
+            <h3>Gestion de projet</h3>
+            <p>Planification et suivi en méthode agile (Scrum), apprentissage rapide de nouvelles technologies</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
