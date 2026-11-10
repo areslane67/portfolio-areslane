@@ -35,6 +35,17 @@ Alternance en développement web (Île-de-France).
 - [extraction-donnees] Extraction de données web (2025, Mastère, équipe de 3, 2 semaines) : automatisation de la
   récupération de données sur des sites web et intégration dans une base MySQL. Rôle : scripts d'extraction et
   configuration de la base. Technologies : Python, Selenium, BeautifulSoup, Jupyter, MySQL.
+- [world-flags] World Flags Explorer (2026) : application React qui affiche les pays du monde avec l'API REST Countries
+  (galerie de drapeaux, recherche, filtres par région et par couleur). Technologies : React, React Router, Tailwind CSS, Axios.
+- [bibliotheque] Bibliothèque React (2026, TP) : gestion d'une bibliothèque de livres, ajout et recherche par titre.
+  Technologies : React, TypeScript, Vite.
+- [stocksense] StockSense (2025, Mastère) : API REST de gestion de stock (produits, commandes, lignes de commande,
+  utilisateurs, photos, prévisions de stock). Technologies : Java, Spring Boot, Spring Data JPA, MySQL.
+- [pizzeria] Pizzeria (2024) : application PHP de gestion d'une pizzeria (pizzas, clients, livreurs), base MySQL.
+- [touriste] Prestations touristiques (2024) : application PHP en architecture MVC (inscription, connexion,
+  ajout et modification de prestations).
+- [projet-ny] New York (2023) : site sur la ville de New York en HTML, CSS et JavaScript.
+- [site-mdl] Site de la Maison des Ligues (2022, BTS SIO) : site multisport avec formulaire d'inscription aux compétitions.
 - [budget-tracker] Budget Tracker (2026, TP React) : gestion de budget (revenus, dépenses, solde, statistiques,
   filtres, sauvegarde dans le navigateur). Technologies : React, TypeScript, localStorage.
 - [intranet-mdl] Intranet collaborateurs (2023, BTS SIO) : plateforme interne avec inscription, connexion,
@@ -55,4 +66,4 @@ Alternance en développement web (Île-de-France).
 `.trim();
 
 // Identifiants de projets autorisés dans la réponse de l'IA (le site les transforme en liens).
-export const PROJETS = ['five-cup', 'brainburst', 'extraction-donnees', 'budget-tracker', 'intranet-mdl', 'personnel-m2l', 'tp-web'];
+export const PROJETS = ['five-cup', 'brainburst', 'extraction-donnees', 'budget-tracker', 'world-flags', 'bibliotheque', 'stocksense', 'pizzeria', 'touriste', 'intranet-mdl', 'personnel-m2l', 'projet-ny', 'site-mdl', 'tp-web'];

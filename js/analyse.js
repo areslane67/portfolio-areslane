@@ -65,6 +65,13 @@ const PROJETS = {
   brainburst: { titre: 'BrainBurst', page: EN ? 'project-brainburst.html' : 'projet-brainburst.html' },
   'budget-tracker': { titre: 'Budget Tracker', page: EN ? 'project-budget-tracker.html' : 'projet-budget-tracker.html' },
   'extraction-donnees': { titre: EN ? 'Web data extraction' : 'Extraction de données web', page: EN ? 'projects.html' : 'projets.html' },
+  'world-flags': { titre: 'World Flags Explorer', page: 'https://github.com/areslane67/drap' },
+  bibliotheque: { titre: EN ? 'React library app' : 'Bibliothèque React', page: 'https://github.com/areslane67/tp' },
+  stocksense: { titre: 'StockSense', page: 'https://github.com/areslane67/Stocksens_back' },
+  pizzeria: { titre: 'Pizzeria', page: 'https://github.com/areslane67/pizza' },
+  touriste: { titre: EN ? 'Tourism services' : 'Prestations touristiques', page: 'https://github.com/areslane67/touriste' },
+  'projet-ny': { titre: 'New York', page: 'https://areslane67.github.io/Projet-NY/index.html' },
+  'site-mdl': { titre: EN ? 'Maison des Ligues website' : 'Site de la Maison des Ligues', page: 'https://areslane67.github.io/Web_Project_BTS/index.html' },
   'intranet-mdl': { titre: EN ? 'Employee intranet (PHP)' : 'Intranet collaborateurs (PHP)', page: EN ? 'php-project.html' : 'traveaux2.html' },
   'personnel-m2l': { titre: EN ? 'League staff management (Java)' : 'Personnel des ligues (Java)', page: EN ? 'java-project.html' : 'traveaux1.html' },
   'tp-web': { titre: EN ? 'Web assignments' : 'TP web', page: EN ? 'school-projects.html' : 'traveaux.html' },
@@ -155,6 +162,7 @@ function afficherAnalyse(zone, a) {
     projets.forEach((p) => {
       const lien = el('a', 'analyse-projet');
       lien.href = PROJETS[p.projet].page; // chemin relatif à la page actuelle (FR ou en/)
+      if (/^https?:/.test(lien.href) && !lien.href.startsWith(location.origin)) { lien.target = '_blank'; lien.rel = 'noopener'; }
       lien.append(el('strong', '', PROJETS[p.projet].titre), el('span', '', p.raison));
       conteneur.append(lien);
     });
