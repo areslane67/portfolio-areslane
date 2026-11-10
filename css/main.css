@@ -179,7 +179,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 .hero {
   position: relative; isolation: isolate; overflow: hidden;
-  min-height: min(100vh, 820px); min-height: min(100svh, 820px);
+  min-height: 100vh; min-height: 100svh;
   display: flex; align-items: center;
   padding: calc(var(--header-h) + 2rem) 0 4rem;
 }
@@ -221,7 +221,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .socials a:hover { transform: translateY(-2px); background: rgba(255, 255, 255, .14); color: var(--cyan); }
 
 @media (max-width: 700px) {
-  .hero { min-height: 0; padding: calc(var(--header-h) + 2.5rem) 0 3rem; }
+  .hero { padding: calc(var(--header-h) + 2rem) 0 2.5rem; }
   .hero::after {
     background: linear-gradient(0deg, var(--bg) 8%, rgba(8, 8, 26, .78) 55%, rgba(8, 8, 26, .5) 100%);
   }
@@ -357,6 +357,41 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 .more-link p { margin: 0; color: var(--muted); }
 .more-link strong { color: var(--text); }
+
+/* Page Contact : coordonnées alignées à gauche, comme le titre */
+#contact .contact-list { justify-content: flex-start; margin-top: 0; }
+
+/* ---------- Page Projets : liste avec aperçu au survol ---------- */
+
+.work-list { border-top: 1px solid var(--border); }
+.work-row {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: .35rem 2rem; align-items: center;
+  padding: 1.5rem 1.25rem; border-bottom: 1px solid var(--border); border-radius: var(--radius-sm); text-decoration: none;
+  transition: background-color .25s, border-color .25s;
+}
+.work-name { font-size: clamp(1.3rem, 2.2vw, 1.8rem); font-weight: 700; letter-spacing: -.01em; line-height: 1.2; }
+.work-desc { grid-column: 1; color: var(--muted); font-size: .95rem; }
+.work-tags { grid-column: 2; grid-row: 1 / span 2; justify-content: flex-end; }
+.work-year { grid-column: 3; grid-row: 1 / span 2; font-family: var(--mono); font-size: .85rem; color: var(--cyan); min-width: 6.5em; text-align: right; }
+a.work-row:hover { background: linear-gradient(90deg, rgba(139, 92, 246, .2), rgba(34, 211, 238, .08)); border-bottom-color: transparent; }
+a.work-row:hover .work-name { color: #fff; }
+
+/* Capture du projet qui suit la souris (ordinateur uniquement, js/main.js) */
+.work-preview {
+  position: fixed; left: 0; top: 0; z-index: 40; width: 340px; aspect-ratio: 16 / 11; pointer-events: none; overflow: hidden;
+  border-radius: var(--radius); border: 1px solid var(--border-strong); background: var(--surface-2); box-shadow: var(--shadow);
+  opacity: 0; transform: translate(-50%, -50%) scale(.92); transition: opacity .25s, transform .25s;
+}
+.work-preview.is-visible { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+.work-preview img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+
+@media (max-width: 860px) {
+  .work-row { grid-template-columns: minmax(0, 1fr) auto; padding: 1.25rem .25rem; }
+  .work-tags { grid-column: 1 / -1; grid-row: auto; justify-content: flex-start; margin-top: .35rem; }
+  .work-year { grid-column: 2; grid-row: 1; min-width: 0; }
+  .work-desc { grid-column: 1 / -1; }
+  .work-preview { display: none; }
+}
 
 /* ---------- Parcours ---------- */
 

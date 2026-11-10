@@ -64,7 +64,7 @@ const PROJETS = {
   'five-cup': { titre: 'ITIC Five Cup', page: EN ? 'project-five-cup.html' : 'projet-five-cup.html' },
   brainburst: { titre: 'BrainBurst', page: EN ? 'project-brainburst.html' : 'projet-brainburst.html' },
   'budget-tracker': { titre: 'Budget Tracker', page: EN ? 'project-budget-tracker.html' : 'projet-budget-tracker.html' },
-  'extraction-donnees': { titre: EN ? 'Web data extraction' : 'Extraction de données web', page: EN ? 'index.html#projects' : 'index.html#projets' },
+  'extraction-donnees': { titre: EN ? 'Web data extraction' : 'Extraction de données web', page: EN ? 'projects.html' : 'projets.html' },
   'intranet-mdl': { titre: EN ? 'Employee intranet (PHP)' : 'Intranet collaborateurs (PHP)', page: EN ? 'php-project.html' : 'traveaux2.html' },
   'personnel-m2l': { titre: EN ? 'League staff management (Java)' : 'Personnel des ligues (Java)', page: EN ? 'java-project.html' : 'traveaux1.html' },
   'tp-web': { titre: EN ? 'Web assignments' : 'TP web', page: EN ? 'school-projects.html' : 'traveaux.html' },
@@ -179,11 +179,12 @@ async function verifierService() {
 }
 
 async function demarrer() {
-  if (!section) return;
-  // L'outil n'apparaît que si le service répond : pas de fonctionnalité cassée en ligne.
+  if (!section && !document.querySelector('[data-analyse-lien]')) return;
+  // L'outil et ses liens n'apparaissent que si le service répond : pas de fonctionnalité cassée en ligne.
   if (!(await verifierService())) return;
-  section.hidden = false;
   document.querySelectorAll('[data-analyse-lien]').forEach((l) => { l.hidden = false; });
+  if (!section) return; // page sans formulaire (accueil) : seul le lien est affiché
+  section.hidden = false;
 
   const form = section.querySelector('form');
   const champ = form.querySelector('textarea');

@@ -46,6 +46,23 @@ if (sectionLinks.length && 'IntersectionObserver' in window) {
   });
 }
 
+// Page Projets : capture du projet qui suit la souris (ordinateur uniquement)
+const apercu = document.querySelector('.work-preview');
+if (apercu && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+  const image = apercu.querySelector('img');
+  document.querySelectorAll('.work-row[data-preview]').forEach((ligne) => {
+    ligne.addEventListener('mouseenter', () => {
+      image.src = ligne.dataset.preview;
+      apercu.classList.add('is-visible');
+    });
+    ligne.addEventListener('mouseleave', () => apercu.classList.remove('is-visible'));
+    ligne.addEventListener('mousemove', (e) => {
+      apercu.style.left = `${Math.min(e.clientX + 200, window.innerWidth - apercu.offsetWidth / 2 - 16)}px`;
+      apercu.style.top = `${e.clientY}px`;
+    });
+  });
+}
+
 // Apparition douce des blocs
 const reveals = document.querySelectorAll('.reveal');
 if ('IntersectionObserver' in window) {

@@ -12,7 +12,10 @@ Ce portfolio présente mon parcours, mes compétences et mes projets. Il intègr
 
 | Page | Fichier |
 |---|---|
-| Accueil : présentation, compétences, projets, parcours, analyse d'offre, veille, contact | `index.html` |
+| Accueil : présentation courte (un écran) | `index.html` |
+| Projets : liste avec aperçu au survol | `projets.html` |
+| À propos : présentation, compétences, parcours, veille | `a-propos.html` |
+| Contact : coordonnées et analyse d'offre par IA | `contact.html` |
 | Fiches projets détaillées (contexte, problème, démarche, outils, résultat) | `projet-five-cup.html`, `projet-brainburst.html`, `projet-budget-tracker.html`, `traveaux1.html` (Java), `traveaux2.html` (PHP) |
 | TP web 2020 – 2024 | `traveaux.html` |
 | Veille technologique : l'IA dans le développement web | `veille-technologique.html` |
@@ -71,7 +74,7 @@ $env:ANTHROPIC_API_KEY = "ta-cle"
 node scripts/serveur-api-local.js
 ```
 
-Ouvrir ensuite le site avec le paramètre `?api=http://localhost:5600/api/analyse`.
+Ouvrir ensuite la page Contact avec le paramètre `?api=http://localhost:5600/api/analyse` (par exemple `contact.html?api=http://localhost:5600/api/analyse`).
 
 ## Mise en ligne de l'analyse d'offre (Vercel)
 
