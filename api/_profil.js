@@ -52,9 +52,6 @@ Alternance en développement web (Île-de-France).
   déploiement de postes sous Linux, maintenance du matériel.
 - Serveur et barman, Brasserie Le Magnolia (2022 – 2024) : service, caisse, gestion des stocks.
 - Stage en comptabilité, Refresh, Bruxelles (2020) : saisie comptable (logiciel Ciel), classement des factures.
-
-## Veille technologique
-Veille sur l'intelligence artificielle dans le développement web (usages, risques, bonnes pratiques).
 `.trim();
 
 // Identifiants de projets autorisés dans la réponse de l'IA (le site les transforme en liens).

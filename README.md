@@ -4,7 +4,7 @@
 
 **[Voir le portfolio en ligne](https://areslane67.github.io/portfolio-areslane/)** · [English version](https://areslane67.github.io/portfolio-areslane/en/)
 
-Développeur web full-stack, étudiant en Mastère européen Expert IT – Applications intelligentes et Big Data à ITIC Paris (2024-2026), **en recherche d'alternance**.
+Développeur web full-stack, **en recherche d'alternance**.
 
 Ce portfolio présente mon parcours, mes compétences et mes projets. Il intègre une fonctionnalité d'intelligence artificielle : **l'analyse d'offre d'emploi**. Un recruteur colle une offre, et l'IA indique quels projets et compétences de mon profil y correspondent, et ce qui me manque.
 
@@ -14,11 +14,10 @@ Ce portfolio présente mon parcours, mes compétences et mes projets. Il intègr
 |---|---|
 | Accueil : présentation courte (un écran) | `index.html` |
 | Projets : liste avec aperçu au survol | `projets.html` |
-| À propos : présentation, compétences, parcours, veille | `a-propos.html` |
+| À propos : présentation, compétences, parcours | `a-propos.html` |
 | Contact : coordonnées et analyse d'offre par IA | `contact.html` |
 | Fiches projets détaillées (contexte, problème, démarche, outils, résultat) | `projet-five-cup.html`, `projet-brainburst.html`, `projet-budget-tracker.html`, `traveaux1.html` (Java), `traveaux2.html` (PHP) |
 | TP web 2020 – 2024 | `traveaux.html` |
-| Veille technologique : l'IA dans le développement web | `veille-technologique.html` |
 | Version anglaise de toutes les pages | `en/` |
 | CV en PDF (généré depuis `cv/cv-source.html`) | `assetWeb/CV.pdf` |
 
