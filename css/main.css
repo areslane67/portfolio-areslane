@@ -529,6 +529,70 @@ code {
 .source small { color: var(--muted); font-family: var(--mono); font-size: .76rem; }
 .source .icon { color: var(--muted); }
 
+/* ---------- Analyse d'offre (IA) ---------- */
+
+.analyse-lien-hero {
+  display: inline-flex; align-items: center; gap: .5rem; margin: -.75rem 0 1.75rem;
+  color: var(--cyan); font-weight: 600; font-size: .95rem; text-decoration: none;
+  border-bottom: 1px dashed rgba(34, 211, 238, .5); padding-bottom: .15rem;
+}
+.analyse-lien-hero:hover { color: #fff; border-bottom-color: #fff; }
+.analyse-lien-hero[hidden] { display: none; }
+
+.analyse { padding: clamp(1.25rem, 3vw, 2rem); }
+.analyse-label { display: block; font-weight: 600; margin-bottom: .5rem; }
+.analyse-form textarea {
+  width: 100%; min-height: 11rem; resize: vertical; padding: .9rem 1rem; border-radius: 12px;
+  font: inherit; font-size: .95rem; line-height: 1.55; color: var(--text);
+  background: rgba(255, 255, 255, .04); border: 1px solid var(--border-strong);
+}
+.analyse-form textarea::placeholder { color: var(--muted); }
+.analyse-form textarea:focus { outline: none; border-color: var(--cyan); box-shadow: 0 0 0 3px rgba(34, 211, 238, .18); }
+.analyse-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; margin-top: 1rem; }
+.analyse-actions .btn[disabled] { opacity: .6; cursor: wait; transform: none; }
+.analyse-compteur { margin-left: auto; font-family: var(--mono); font-size: .8rem; color: var(--muted); }
+.analyse-note { display: flex; gap: .5rem; align-items: flex-start; margin: 1rem 0 0; font-size: .85rem; color: var(--muted); }
+.analyse-note .icon { margin-top: .2rem; color: #fbbf24; }
+
+.analyse-resultat:not(:empty) { margin-top: 1.75rem; padding-top: 1.75rem; border-top: 1px solid var(--border); }
+.analyse-chargement { color: var(--cyan); font-weight: 500; margin: 0; }
+.analyse-chargement::before {
+  content: ''; display: inline-block; width: 14px; height: 14px; margin-right: .6rem; vertical-align: -2px;
+  border: 2px solid rgba(34, 211, 238, .3); border-top-color: var(--cyan); border-radius: 50%;
+  animation: tourner .8s linear infinite;
+}
+@keyframes tourner { to { transform: rotate(360deg); } }
+
+.analyse-entete { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; margin-bottom: .9rem; }
+.analyse-niveau { padding: .3rem .8rem; border-radius: 999px; font-weight: 700; font-size: .85rem; }
+.niveau-fort { background: rgba(52, 211, 153, .15); color: #6ee7b7; border: 1px solid rgba(52, 211, 153, .4); }
+.niveau-moyen { background: rgba(251, 191, 36, .12); color: #fcd34d; border: 1px solid rgba(251, 191, 36, .4); }
+.niveau-faible { background: rgba(248, 113, 113, .12); color: #fca5a5; border: 1px solid rgba(248, 113, 113, .4); }
+.analyse-poste { color: var(--text-soft); font-weight: 600; }
+.analyse-resume { color: var(--text-soft); font-size: 1.02rem; }
+
+.analyse-colonnes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 1.25rem; margin: 1.25rem 0; }
+.analyse-bloc h3 { font-size: 1rem; margin-bottom: .75rem; }
+.analyse-liste li { position: relative; padding-left: 1.5rem; margin-bottom: .6rem; color: var(--text-soft); font-size: .95rem; }
+.analyse-liste li::before { position: absolute; left: 0; top: 0; font-weight: 700; }
+.bloc-ok .analyse-liste li::before { content: '✓'; color: #6ee7b7; }
+.bloc-manque .analyse-liste li::before { content: '–'; color: #fcd34d; }
+.analyse-liste strong { color: var(--text); }
+.analyse-vide { color: var(--muted); font-size: .92rem; }
+
+.analyse-projets { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: .75rem; }
+.analyse-projet {
+  display: flex; flex-direction: column; gap: .25rem; padding: .9rem 1rem; border-radius: 12px; text-decoration: none;
+  background: rgba(139, 92, 246, .08); border: 1px solid rgba(139, 92, 246, .3);
+  transition: border-color .2s, transform .2s;
+}
+.analyse-projet:hover { transform: translateY(-2px); border-color: var(--violet-light); }
+.analyse-projet span { color: var(--muted); font-size: .88rem; }
+.analyse-mention { margin: 1.25rem 0 0; font-size: .82rem; color: var(--muted); font-style: italic; }
+
+.callout-erreur { background: rgba(248, 113, 113, .08); border-color: rgba(248, 113, 113, .35); }
+.analyse-contact { color: var(--cyan); font-weight: 600; }
+
 /* ---------- Apparition au défilement ---------- */
 
 .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }

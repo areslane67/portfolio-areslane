@@ -1,0 +1,10 @@
+# Fichiers personnels retirés du site (copie dans ../fichiers-retires-du-site)
+assets/CV.pdf
+assetDiplome/Bac.pdf
+assetDiplome/Brevet.pdf
+
+# Dépendances Node
+node_modules/
+.env
+.env.local
+.vercel

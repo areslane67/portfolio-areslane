@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Budget Tracker (React, TypeScript) — Areslane Haddadi</title>
+  <meta name="description" content="Budget Tracker : TP React et TypeScript de 8 heures, une application de gestion de budget avec revenus, dépenses, solde, statistiques, filtres et sauvegarde dans le navigateur.">
+  <meta name="theme-color" content="#08081a">
+  <link rel="canonical" href="https://areslane67.github.io/portfolio-areslane/projet-budget-tracker.html">
+  <link rel="alternate" hreflang="fr" href="https://areslane67.github.io/portfolio-areslane/projet-budget-tracker.html">
+  <link rel="alternate" hreflang="en" href="https://areslane67.github.io/portfolio-areslane/en/project-budget-tracker.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Budget Tracker (React, TypeScript) — Areslane Haddadi">
+  <meta property="og:url" content="https://areslane67.github.io/portfolio-areslane/projet-budget-tracker.html">
+  <meta property="og:image" content="https://areslane67.github.io/portfolio-areslane/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/main.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header is-solid">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Areslane Haddadi, retour à l'accueil">
+        <span class="brand-name" aria-hidden="true">Areslane<span class="brand-dot">.</span></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Menu principal">
+        <a href="index.html#a-propos">À propos</a>
+        <a href="index.html#competences">Compétences</a>
+        <a href="index.html#projets" aria-current="page">Projets</a>
+        <a href="index.html#parcours">Parcours</a>
+        <a href="veille-technologique.html">Veille</a>
+        <a href="index.html#contact">Contact</a>
+        <a class="btn btn-primary btn-sm" href="assetWeb/CV.pdf" target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="img/icons.svg#download"/></svg> Mon CV
+        </a>
+      </nav>
+      <a class="lang-switch" href="en/project-budget-tracker.html" hreflang="en" lang="en" aria-label="English version">EN</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu">
+        <svg class="icon icon-menu" aria-hidden="true"><use href="img/icons.svg#menu"/></svg>
+        <svg class="icon icon-close" aria-hidden="true"><use href="img/icons.svg#close"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="page-hero">
+      <div class="container">
+        <a class="back-link" href="index.html#projets">
+          <svg class="icon" aria-hidden="true"><use href="img/icons.svg#arrow-left"/></svg> Retour aux projets
+        </a>
+        <p class="eyebrow">// 2026 · TP React · 8 heures</p>
+        <h1>Budget Tracker</h1>
+        <p class="lead">
+          Une application de gestion de budget personnel en React et TypeScript&nbsp;: revenus et dépenses, solde,
+          statistiques, filtres et sauvegarde automatique dans le navigateur.
+        </p>
+        <ul class="tags">
+          <li class="tag">React</li><li class="tag">TypeScript</li><li class="tag">Vite</li>
+          <li class="tag">CSS3</li><li class="tag">localStorage</li><li class="tag">Git</li>
+        </ul>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://github.com/areslane67/budget-tracker" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="img/icons.svg#github"/></svg> Voir le code
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="block reveal">
+          <h2>Contexte</h2>
+          <p>
+            Budget Tracker est un TP (travail pratique) de React prévu pour durer 8&nbsp;heures. Le sujet&nbsp;: réaliser une
+            application de gestion de budget personnel en React et TypeScript, tout en pratiquant le travail collaboratif
+            avec Git et GitHub. Le TP prévoit un travail en binôme, organisé en branches de fonctionnalités.
+          </p>
+        </div>
+
+        <div class="block reveal">
+          <h2>Problème</h2>
+          <p>L'application devait permettre de&nbsp;:</p>
+          <ul class="list">
+            <li>ajouter des revenus et des dépenses&nbsp;;</li>
+            <li>voir le solde total avec des statistiques&nbsp;;</li>
+            <li>filtrer les transactions (toutes, revenus ou dépenses)&nbsp;;</li>
+            <li>retrouver ses données après un rechargement de la page, grâce au <code>localStorage</code>.</li>
+          </ul>
+          <p>
+            Des bonus étaient possibles&nbsp;: un graphique, des statistiques avancées, une validation plus poussée
+            du formulaire et un design responsive.
+          </p>
+        </div>
+
+        <div class="block reveal">
+          <h2>Démarche</h2>
+          <ul class="list">
+            <li><strong>Découpage en composants</strong>&nbsp;: formulaire (<code>TransactionForm</code>), liste et ligne de transaction (<code>TransactionList</code>, <code>TransactionItem</code>), solde et statistiques (<code>Balance</code>) et filtres (<code>Filter</code>), avec une feuille CSS par composant.</li>
+            <li><strong>État centralisé</strong>&nbsp;: les transactions et le filtre actif sont gérés dans <code>App</code> avec <code>useState</code>, puis transmis aux composants par les props.</li>
+            <li><strong>Typage</strong>&nbsp;: une transaction est typée en TypeScript (identifiant, titre, montant, type revenu ou dépense, date).</li>
+            <li><strong>Calculs</strong>&nbsp;: totaux, solde et filtrage avec les méthodes <code>filter()</code>, <code>reduce()</code> et <code>map()</code>.</li>
+            <li><strong>Persistance</strong>&nbsp;: <code>useEffect</code> charge les transactions depuis le <code>localStorage</code> au démarrage et les sauvegarde à chaque modification, avec une gestion des données corrompues.</li>
+            <li><strong>Validation</strong>&nbsp;: titre de 1 à 100&nbsp;caractères, montant compris entre 0,01 et 999&nbsp;999,99, pas de date dans le futur, et un message de confirmation après chaque ajout.</li>
+            <li><strong>Git</strong>&nbsp;: une branche par fonctionnalité (<code>feature/form</code>, <code>feature/list</code>, <code>feature/balance</code>…) et des messages de commit au format Conventional Commits.</li>
+          </ul>
+        </div>
+
+        <div class="block reveal">
+          <h2>Outils utilisés</h2>
+          <div class="grid-3">
+            <article class="card skill-card">
+              <h3><span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#code"/></svg></span>Front-end</h3>
+              <ul class="tech-list">
+                <li class="tech"><img src="img/tech/react.svg" alt="" width="22" height="22" loading="lazy">React 19</li>
+                <li class="tech"><img src="img/tech/typescript.svg" alt="" width="22" height="22" loading="lazy">TypeScript</li>
+                <li class="tech"><span class="tech-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#spark"/></svg></span>Vite</li>
+                <li class="tech"><img src="img/tech/css.svg" alt="" width="22" height="22" loading="lazy">CSS3</li>
+              </ul>
+            </article>
+            <article class="card skill-card">
+              <h3><span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#database"/></svg></span>Données</h3>
+              <ul class="tech-list">
+                <li class="tech"><span class="tech-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#database"/></svg></span>localStorage</li>
+                <li class="tech"><span class="tech-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#repeat"/></svg></span>useState</li>
+                <li class="tech"><span class="tech-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#repeat"/></svg></span>useEffect</li>
+                <li class="tech"><span class="tech-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#code"/></svg></span>JSON</li>
+              </ul>
+            </article>
+            <article class="card skill-card">
+              <h3><span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#tools"/></svg></span>Qualité &amp; collaboration</h3>
+              <ul class="tech-list">
+                <li class="tech"><img src="img/tech/git.svg" alt="" width="22" height="22" loading="lazy">Git</li>
+                <li class="tech"><img src="img/tech/github.svg" alt="" width="22" height="22" loading="lazy">GitHub</li>
+                <li class="tech"><span class="tech-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#check"/></svg></span>ESLint</li>
+                <li class="tech"><span class="tech-icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#pen"/></svg></span>Conventional Commits</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+
+        <div class="block reveal">
+          <h2>Résultat</h2>
+          <p>
+            Toutes les fonctionnalités principales du TP sont en place&nbsp;: ajout et suppression de transactions, liste triée
+            par date, solde, filtres et sauvegarde automatique. Les bonus aussi&nbsp;: barre de répartition entre revenus et
+            dépenses, taux d'épargne et moyenne par transaction, validation avancée et design responsive (mobile, tablette
+            et ordinateur).
+          </p>
+          <p>
+            Le code est disponible sur GitHub et l'application se lance en local avec Vite. Ce TP m'a permis de consolider
+            les bases de React avec TypeScript (composants, props, état, effets) et de pratiquer un workflow Git structuré,
+            le tout dans un temps limité.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span data-year>2026</span> Areslane Haddadi</p>
+      <nav class="footer-links" aria-label="Liens du pied de page">
+        <a href="https://github.com/areslane67" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/areslane-haddadi-9260131a1/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:areslane67@gmail.com">E-mail</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

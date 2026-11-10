@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Budget Tracker (React, TypeScript) — Areslane Haddadi</title>
+  <meta name="description" content="Budget Tracker: an 8-hour React and TypeScript school assignment, a budgeting app with income, expenses, balance, statistics, filters and in-browser storage.">
+  <meta name="theme-color" content="#08081a">
+  <link rel="canonical" href="https://areslane67.github.io/portfolio-areslane/en/project-budget-tracker.html">
+  <link rel="alternate" hreflang="fr" href="https://areslane67.github.io/portfolio-areslane/projet-budget-tracker.html">
+  <link rel="alternate" hreflang="en" href="https://areslane67.github.io/portfolio-areslane/en/project-budget-tracker.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Budget Tracker (React, TypeScript) — Areslane Haddadi">
+  <meta property="og:url" content="https://areslane67.github.io/portfolio-areslane/en/project-budget-tracker.html">
+  <meta property="og:image" content="https://areslane67.github.io/portfolio-areslane/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="../css/main.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header is-solid">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Areslane Haddadi, back to home page">
+        <span class="brand-name" aria-hidden="true">Areslane<span class="brand-dot">.</span></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Main menu">
+        <a href="index.html#about">About</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#projects" aria-current="page">Projects</a>
+        <a href="index.html#background">Background</a>
+        <a href="tech-watch.html">Tech watch</a>
+        <a href="index.html#contact">Contact</a>
+        <a class="btn btn-primary btn-sm" href="../assetWeb/CV.pdf" target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="../img/icons.svg#download"/></svg> CV (FR)
+        </a>
+      </nav>
+      <a class="lang-switch" href="../projet-budget-tracker.html" hreflang="fr" lang="fr" aria-label="Version française">FR</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+        <svg class="icon icon-menu" aria-hidden="true"><use href="../img/icons.svg#menu"/></svg>
+        <svg class="icon icon-close" aria-hidden="true"><use href="../img/icons.svg#close"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="page-hero">
+      <div class="container">
+        <a class="back-link" href="index.html#projects">
+          <svg class="icon" aria-hidden="true"><use href="../img/icons.svg#arrow-left"/></svg> Back to projects
+        </a>
+        <p class="eyebrow">// 2026 · React school assignment · 8 hours</p>
+        <h1>Budget Tracker</h1>
+        <p class="lead">
+          A personal budgeting app built with React and TypeScript: income and expenses, balance,
+          statistics, filters and automatic saving in the browser.
+        </p>
+        <ul class="tags">
+          <li class="tag">React</li><li class="tag">TypeScript</li><li class="tag">Vite</li>
+          <li class="tag">CSS3</li><li class="tag">localStorage</li><li class="tag">Git</li>
+        </ul>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://github.com/areslane67/budget-tracker" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="../img/icons.svg#github"/></svg> View the code
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="block reveal">
+          <h2>Context</h2>
+          <p>
+            Budget Tracker is a hands-on React assignment designed to take 8 hours. The brief: build a personal
+            budgeting app with React and TypeScript while practicing collaborative work with Git and GitHub.
+            The assignment is meant to be done in pairs, organized around feature branches.
+          </p>
+        </div>
+
+        <div class="block reveal">
+          <h2>Problem</h2>
+          <p>The app had to let users:</p>
+          <ul class="list">
+            <li>add income and expenses;</li>
+            <li>see the total balance along with statistics;</li>
+            <li>filter transactions (all, income only or expenses only);</li>
+            <li>find their data again after reloading the page, thanks to <code>localStorage</code>.</li>
+          </ul>
+          <p>
+            Optional extras were possible: a chart, advanced statistics, stronger form validation
+            and a responsive design.
+          </p>
+        </div>
+
+        <div class="block reveal">
+          <h2>Approach</h2>
+          <ul class="list">
+            <li><strong>Component breakdown</strong>: a form (<code>TransactionForm</code>), a list and a transaction row (<code>TransactionList</code>, <code>TransactionItem</code>), balance and statistics (<code>Balance</code>) and filters (<code>Filter</code>), with one CSS file per component.</li>
+            <li><strong>Centralized state</strong>: transactions and the active filter live in <code>App</code> with <code>useState</code> and are passed down to components as props.</li>
+            <li><strong>Typing</strong>: each transaction has a TypeScript type (ID, title, amount, income or expense type, date).</li>
+            <li><strong>Calculations</strong>: totals, balance and filtering with the <code>filter()</code>, <code>reduce()</code> and <code>map()</code> methods.</li>
+            <li><strong>Persistence</strong>: <code>useEffect</code> loads transactions from <code>localStorage</code> on startup and saves them on every change, with handling for corrupted data.</li>
+            <li><strong>Validation</strong>: title between 1 and 100 characters, amount between 0.01 and 999,999.99, no future dates, and a confirmation message after each new entry.</li>
+            <li><strong>Git</strong>: one branch per feature (<code>feature/form</code>, <code>feature/list</code>, <code>feature/balance</code>…) and commit messages following the Conventional Commits format.</li>
+          </ul>
+        </div>
+
+        <div class="block reveal">
+          <h2>Tools used</h2>
+          <div class="grid-3">
+            <article class="card skill-card">
+              <h3><span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="../img/icons.svg#code"/></svg></span>Front end</h3>
+              <ul class="tech-list">
+                <li class="tech"><img src="../img/tech/react.svg" alt="" width="22" height="22" loading="lazy">React 19</li>
+                <li class="tech"><img src="../img/tech/typescript.svg" alt="" width="22" height="22" loading="lazy">TypeScript</li>
+                <li class="tech"><span class="tech-icon"><svg class="icon" aria-hidden="true"><use href="../img/icons.svg#spark"/></svg></span>Vite</li>
+                <li class="tech"><img src="../img/tech/css.svg" alt="" width="22" height="22" loading="lazy">CSS3</li>
+              </ul>
+            </article>
+            <article class="card skill-card">
+              <h3><span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="../img/icons.svg#database"/></svg></span>Data</h3>
+              <ul class="tech-list">
+                <li class="tech"><span class="tech-icon"><svg class="icon" aria-hidden="true"><use href="../img/icons.svg#database"/></svg></span>localStorage</li>
+                <li class="tech"><span class="tech-icon"><svg class="icon" aria-hidden="true"><use href="../img/icons.svg#repeat"/></svg></span>useState</li>
+                <li class="tech"><span class="tech-icon"><svg class="icon" aria-hidden="true"><use href="../img/icons.svg#repeat"/></svg></span>useEffect</li>
+                <li class="tech"><span class="tech-icon"><svg class="icon" aria-hidden="true"><use href="../img/icons.svg#code"/></svg></span>JSON</li>
+              </ul>
+            </article>
+            <article class="card skill-card">
+              <h3><span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="../img/icons.svg#tools"/></svg></span>Quality &amp; collaboration</h3>
+              <ul class="tech-list">
+                <li class="tech"><img src="../img/tech/git.svg" alt="" width="22" height="22" loading="lazy">Git</li>
+                <li class="tech"><img src="../img/tech/github.svg" alt="" width="22" height="22" loading="lazy">GitHub</li>
+                <li class="tech"><span class="tech-icon"><svg class="icon" aria-hidden="true"><use href="../img/icons.svg#check"/></svg></span>ESLint</li>
+                <li class="tech"><span class="tech-icon"><svg class="icon" aria-hidden="true"><use href="../img/icons.svg#pen"/></svg></span>Conventional Commits</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+
+        <div class="block reveal">
+          <h2>Result</h2>
+          <p>
+            All the core features of the assignment are in place: adding and deleting transactions, a list sorted
+            by date, the balance, filters and automatic saving. So are the extras: an income vs. expense distribution
+            bar, savings rate and average per transaction, advanced validation and a responsive design (mobile, tablet
+            and desktop).
+          </p>
+          <p>
+            The code is available on GitHub and the app runs locally with Vite. This assignment helped me strengthen
+            my React and TypeScript fundamentals (components, props, state, effects) and practice a structured Git workflow,
+            all within a tight time frame.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span data-year>2026</span> Areslane Haddadi</p>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="https://github.com/areslane67" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/areslane-haddadi-9260131a1/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:areslane67@gmail.com">Email</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

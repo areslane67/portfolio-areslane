@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BrainBurst, quiz app (React) — Areslane Haddadi</title>
+  <meta name="description" content="BrainBurst: a React and TypeScript quiz app built by a team of 3 during the Master's program, with quizzes by theme and difficulty, a score and a sudden-death mode.">
+  <meta name="theme-color" content="#08081a">
+  <link rel="canonical" href="https://areslane67.github.io/portfolio-areslane/en/project-brainburst.html">
+  <link rel="alternate" hreflang="fr" href="https://areslane67.github.io/portfolio-areslane/projet-brainburst.html">
+  <link rel="alternate" hreflang="en" href="https://areslane67.github.io/portfolio-areslane/en/project-brainburst.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="BrainBurst, quiz app (React) — Areslane Haddadi">
+  <meta property="og:url" content="https://areslane67.github.io/portfolio-areslane/en/project-brainburst.html">
+  <meta property="og:image" content="https://areslane67.github.io/portfolio-areslane/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="../css/main.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header is-solid">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Areslane Haddadi, back to home page">
+        <span class="brand-name" aria-hidden="true">Areslane<span class="brand-dot">.</span></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Main menu">
+        <a href="index.html#about">About</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#projects" aria-current="page">Projects</a>
+        <a href="index.html#background">Background</a>
+        <a href="tech-watch.html">Tech watch</a>
+        <a href="index.html#contact">Contact</a>
+        <a class="btn btn-primary btn-sm" href="../assetWeb/CV.pdf" target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="../img/icons.svg#download"/></svg> CV (FR)
+        </a>
+      </nav>
+      <a class="lang-switch" href="../projet-brainburst.html" hreflang="fr" lang="fr" aria-label="Version française">FR</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+        <svg class="icon icon-menu" aria-hidden="true"><use href="../img/icons.svg#menu"/></svg>
+        <svg class="icon icon-close" aria-hidden="true"><use href="../img/icons.svg#close"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="page-hero">
+      <div class="container">
+        <a class="back-link" href="index.html#projects">
+          <svg class="icon" aria-hidden="true"><use href="../img/icons.svg#arrow-left"/></svg> Back to projects
+        </a>
+        <p class="eyebrow">// 2025 · Master's project · team of 3 · 3 weeks</p>
+        <h1>BrainBurst</h1>
+        <p class="lead">
+          An interactive quiz app built with React and TypeScript: quizzes by theme and difficulty level,
+          a score, and a "sudden death" mode where a single mistake ends the game.
+        </p>
+        <ul class="tags">
+          <li class="tag">React</li><li class="tag">TypeScript</li><li class="tag">Hooks</li><li class="tag">React Router</li>
+          <li class="tag">Figma</li><li class="tag">GitHub</li><li class="tag">Trello</li>
+        </ul>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://brainsburst-itic.netlify.app" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="../img/icons.svg#external"/></svg> Live site
+          </a>
+          <a class="btn btn-ghost" href="https://github.com/Duorly/react-quizz-app" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="../img/icons.svg#github"/></svg> View the code
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="block">
+          <figure class="figure figure-wide reveal">
+            <img src="../img/projets/brainburst.webp" alt="BrainBurst home screen: logo and a &quot;Click to start!&quot; message (in French)" width="800" height="500">
+            <figcaption>The app's home screen (in French).</figcaption>
+          </figure>
+        </div>
+
+        <div class="block reveal">
+          <h2>Context</h2>
+          <p>
+            BrainBurst is a group project from the Master's program, built by three people in three weeks.
+            It had two goals: go deeper into React and its Hooks, and learn how to run a team project
+            in conditions close to a professional environment.
+          </p>
+        </div>
+
+        <div class="block reveal">
+          <h2>Problem</h2>
+          <p>The task was to design a fun, educational quiz app that felt complete and pleasant to use:</p>
+          <ul class="list">
+            <li>several quizzes sorted by theme and difficulty level, with progress and score tracking;</li>
+            <li>a "hardcore" mode where a single mistake ends the game;</li>
+            <li>a smooth, responsive interface, with clean, well-structured and documented code;</li>
+            <li>a modular structure, so new quizzes, themes and features are easy to add.</li>
+          </ul>
+          <p>All of it with several people working on the same codebase, which called for a clear way of organizing the work.</p>
+        </div>
+
+        <div class="block reveal">
+          <h2>Approach</h2>
+          <ul class="list">
+            <li><strong>Visual design</strong>: wireframes, zoning, then mockups in Figma, plus a style guide, before writing any code.</li>
+            <li><strong>Work split</strong>: each member owned one part: the quiz logic (steps, progress, score), displaying the questions and navigation, the results screen, and the overall design with visual interactions.</li>
+            <li><strong>Git workflow</strong>: one branch per feature, pull requests and code reviews before every merge, with tasks organized in Trello.</li>
+            <li><strong>Development</strong>: React and TypeScript with Hooks (<code>useState</code>, <code>useEffect</code>, <code>useMemo</code>…), and React Router to move between screens (mode, theme and difficulty selection, countdown, quiz, results).</li>
+            <li><strong>Questions</strong>: loaded from the public Open Trivia DB API, based on the chosen theme and difficulty.</li>
+            <li><strong>Two game modes</strong>: "classic", a set of 10 timed questions, and "sudden death", where the game stops at the first mistake.</li>
+          </ul>
+        </div>
+
+        <div class="block reveal">
+          <h2>Tools used</h2>
+          <div class="grid-3">
+            <article class="card skill-card">
+              <h3><span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="../img/icons.svg#code"/></svg></span>Development</h3>
+              <ul class="tech-list">
+                <li class="tech"><img src="../img/tech/html.svg" alt="" width="22" height="22" loading="lazy">HTML</li>
+                <li class="tech"><img src="../img/tech/css.svg" alt="" width="22" height="22" loading="lazy">CSS</li>
+                <li class="tech"><img src="../img/tech/javascript.svg" alt="" width="22" height="22" loading="lazy">JavaScript</li>
+                <li class="tech"><img src="../img/tech/typescript.svg" alt="" width="22" height="22" loading="lazy">TypeScript</li>
+                <li class="tech"><img src="../img/tech/react.svg" alt="" width="22" height="22" loading="lazy">React</li>
+                <li class="tech"><span class="tech-icon"><svg class="icon" aria-hidden="true"><use href="../img/icons.svg#plug"/></svg></span>Open Trivia DB</li>
+              </ul>
+            </article>
+            <article class="card skill-card">
+              <h3><span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="../img/icons.svg#pen"/></svg></span>Design</h3>
+              <ul class="tech-list">
+                <li class="tech"><img src="../img/tech/figma.svg" alt="" width="22" height="22" loading="lazy">Figma</li>
+                <li class="tech"><span class="tech-icon"><svg class="icon" aria-hidden="true"><use href="../img/icons.svg#wireframe"/></svg></span>Wireframes</li>
+                <li class="tech"><span class="tech-icon"><svg class="icon" aria-hidden="true"><use href="../img/icons.svg#layout"/></svg></span>Zoning</li>
+                <li class="tech"><span class="tech-icon"><svg class="icon" aria-hidden="true"><use href="../img/icons.svg#pen"/></svg></span>Mockups</li>
+              </ul>
+            </article>
+            <article class="card skill-card">
+              <h3><span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="../img/icons.svg#tools"/></svg></span>Organization</h3>
+              <ul class="tech-list">
+                <li class="tech"><img src="../img/tech/git.svg" alt="" width="22" height="22" loading="lazy">Git</li>
+                <li class="tech"><img src="../img/tech/github.svg" alt="" width="22" height="22" loading="lazy">GitHub</li>
+                <li class="tech"><img src="../img/tech/trello.svg" alt="" width="22" height="22" loading="lazy">Trello</li>
+                <li class="tech"><span class="tech-icon"><svg class="icon" aria-hidden="true"><use href="../img/icons.svg#repeat"/></svg></span>Pull requests</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+
+        <div class="block reveal">
+          <h2>Result</h2>
+          <p>
+            The app is live. In classic mode, players pick a theme (general knowledge, history, movies, sports,
+            science and nature, or a mix of all themes) and a difficulty level, then answer the questions and get their score.
+          </p>
+          <p>
+            This project gave me hands-on practice working with others on the same codebase using branches, pull requests and reviews,
+            and turning Figma mockups into a React interface.
+          </p>
+        </div>
+
+        <div class="callout reveal">
+          <svg class="icon" aria-hidden="true"><use href="../img/icons.svg#spark"/></svg>
+          <p>
+            <strong>My role:</strong> developing web interfaces and the API, managing and organizing the project,
+            and designing the app's mockups in Figma.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span data-year>2026</span> Areslane Haddadi</p>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="https://github.com/areslane67" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/areslane-haddadi-9260131a1/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:areslane67@gmail.com">Email</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-areslane",
+  "private": true,
+  "description": "Portfolio d'Areslane Haddadi : site statique + fonction serverless d'analyse d'offre (Claude API)",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test:ia": "node scripts/test-ia.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.7.0"
+  }
+}

@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="../css/main.css">
   <script>document.documentElement.classList.add('js');</script>
   <script src="../js/main.js" defer></script>
+  <script src="../js/analyse.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to content</a>
@@ -82,6 +83,7 @@
               <svg class="icon" aria-hidden="true"><use href="../img/icons.svg#download"/></svg> Download my CV (French)
             </a>
           </div>
+          <a class="analyse-lien-hero" href="#analyse-offre" data-analyse-lien hidden><svg class="icon" aria-hidden="true"><use href="../img/icons.svg#spark"/></svg> Recruiter? Compare your offer with my profile using AI</a>
           <div class="socials">
             <a href="https://github.com/areslane67" target="_blank" rel="noopener" aria-label="GitHub">
               <svg class="icon" aria-hidden="true"><use href="../img/icons.svg#github"/></svg>
@@ -249,6 +251,9 @@
                 <li class="tag">Express</li><li class="tag">MySQL</li><li class="tag">JWT</li>
               </ul>
               <div class="project-links">
+                <a class="link-btn" href="project-five-cup.html">
+                  <svg class="icon" aria-hidden="true"><use href="../img/icons.svg#arrow-right"/></svg> Details
+                </a>
                 <a class="link-btn" href="https://itic-five-cup.vercel.app" target="_blank" rel="noopener">
                   <svg class="icon" aria-hidden="true"><use href="../img/icons.svg#external"/></svg> Live site
                 </a>
@@ -275,6 +280,9 @@
                 <li class="tag">GitHub</li><li class="tag">Trello</li>
               </ul>
               <div class="project-links">
+                <a class="link-btn" href="project-brainburst.html">
+                  <svg class="icon" aria-hidden="true"><use href="../img/icons.svg#arrow-right"/></svg> Details
+                </a>
                 <a class="link-btn" href="https://brainsburst-itic.netlify.app" target="_blank" rel="noopener">
                   <svg class="icon" aria-hidden="true"><use href="../img/icons.svg#external"/></svg> Live site
                 </a>
@@ -342,6 +350,9 @@ localStorage.<span class="f">setItem</span>(
                 <li class="tag">React</li><li class="tag">TypeScript</li><li class="tag">localStorage</li>
               </ul>
               <div class="project-links">
+                <a class="link-btn" href="project-budget-tracker.html">
+                  <svg class="icon" aria-hidden="true"><use href="../img/icons.svg#arrow-right"/></svg> Details
+                </a>
                 <a class="link-btn" href="https://github.com/areslane67/budget-tracker" target="_blank" rel="noopener">
                   <svg class="icon" aria-hidden="true"><use href="../img/icons.svg#github"/></svg> Code
                 </a>
@@ -444,17 +455,11 @@ localStorage.<span class="f">setItem</span>(
                 <ul>
                   <li>Along with the qualification certificate (CQ6) and the basic business management certificate</li>
                 </ul>
-                <a class="link-btn tl-doc" href="../assetDiplome/Bac.pdf" target="_blank" rel="noopener">
-                  <svg class="icon" aria-hidden="true"><use href="../img/icons.svg#file"/></svg> View diplomas (PDF, French)
-                </a>
               </li>
               <li class="tl-item">
                 <span class="tl-date">2016</span>
                 <h4>Algerian lower secondary certificate (BEM)</h4>
                 <p class="tl-place">Lycée Cheikh Bouamama, Algiers</p>
-                <a class="link-btn tl-doc" href="../assetDiplome/Brevet.pdf" target="_blank" rel="noopener">
-                  <svg class="icon" aria-hidden="true"><use href="../img/icons.svg#file"/></svg> View diploma (PDF, French)
-                </a>
               </li>
             </ol>
           </div>
@@ -503,6 +508,30 @@ localStorage.<span class="f">setItem</span>(
               </li>
             </ol>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI offer analysis: shown only when the service responds (js/analyse.js) -->
+    <section class="section" id="analyse-offre" data-analyse hidden>
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="../img/icons.svg#spark"/></svg> offer analysis · AI</p>
+          <h2>Does my profile match your offer?</h2>
+          <p>Paste a work-study, internship or job offer: the AI compares it with my projects and skills, and also points out what I'm missing.</p>
+        </div>
+        <div class="analyse card reveal">
+          <form class="analyse-form" novalidate>
+            <label for="analyse-texte" class="analyse-label">Offer text</label>
+            <textarea id="analyse-texte" name="offre" rows="8" maxlength="6000" required placeholder="Paste the offer here (tasks, required skills…)"></textarea>
+            <div class="analyse-actions">
+              <button type="submit" class="btn btn-primary"><svg class="icon" aria-hidden="true"><use href="../img/icons.svg#spark"/></svg> Analyse the offer</button>
+              <button type="button" class="btn btn-ghost btn-sm" data-exemple>Try with an example</button>
+              <span class="analyse-compteur" aria-live="polite"></span>
+            </div>
+            <p class="analyse-note"><svg class="icon" aria-hidden="true"><use href="../img/icons.svg#alert"/></svg> AI-generated answer based on this portfolio: it may contain mistakes. The text you send is not stored; please don't include personal data.</p>
+          </form>
+          <div class="analyse-resultat" aria-live="polite"></div>
         </div>
       </div>
     </section>
