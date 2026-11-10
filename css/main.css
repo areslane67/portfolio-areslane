@@ -157,6 +157,11 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .nav-toggle[aria-expanded="true"] .icon-menu { display: none; }
 .nav-toggle[aria-expanded="true"] .icon-close { display: block; }
 
+/* Le CV n'apparaît que dans le menu burger (mobile), pas dans l'en-tête sur ordinateur */
+@media (min-width: 1025px) {
+  .nav a[href$="CV.pdf"] { display: none; }
+}
+
 @media (max-width: 1024px) {
   .nav-toggle { display: inline-grid; }
   .lang-switch { margin-left: auto; height: 44px; border-radius: 12px; }
@@ -265,6 +270,13 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 .apport h3 { font-size: 1.1rem; margin: 1rem 0 .5rem; }
 .apport p { color: var(--text-soft); margin: 0; }
+
+/* ---------- À propos : ils m'ont fait confiance ---------- */
+
+.trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 1.25rem; }
+.trust-card h3 { font-size: 1.15rem; margin-bottom: .2rem; }
+.trust-role { font-family: var(--mono); font-size: .8rem; color: var(--cyan); margin-bottom: .75rem; }
+.trust-card p:last-child { color: var(--text-soft); margin: 0; font-size: .95rem; }
 
 /* ---------- Compétences ---------- */
 

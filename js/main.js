@@ -63,6 +63,12 @@ if (apercu && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
   });
 }
 
+// Arrivée depuis une autre page sur une section précise (ex. a-propos.html#confiance) : on y va directement
+if (location.hash) {
+  const cible = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+  if (cible) window.addEventListener('load', () => cible.scrollIntoView({ behavior: 'instant', block: 'start' }));
+}
+
 // Apparition douce des blocs
 const reveals = document.querySelectorAll('.reveal');
 if ('IntersectionObserver' in window) {
